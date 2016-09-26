@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WKTabBarController.h
 //  WKBS
 //
 //  Created by 阿拉斯加的狗 on 16/9/26.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WKTabBarController : UITabBarController
 
 @end
-

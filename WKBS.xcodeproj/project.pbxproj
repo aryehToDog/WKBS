@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		255388CF1D990AF800000967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388CE1D990AF800000967 /* main.m */; };
 		255388D21D990AF800000967 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388D11D990AF800000967 /* AppDelegate.m */; };
-		255388D51D990AF800000967 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388D41D990AF800000967 /* ViewController.m */; };
-		255388D81D990AF800000967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255388D61D990AF800000967 /* Main.storyboard */; };
 		255388DA1D990AF800000967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255388D91D990AF800000967 /* Assets.xcassets */; };
-		255388DD1D990AF800000967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255388DB1D990AF800000967 /* LaunchScreen.storyboard */; };
 		255388E81D990AF800000967 /* WKBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388E71D990AF800000967 /* WKBSTests.m */; };
 		255388F31D990AF900000967 /* WKBSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388F21D990AF900000967 /* WKBSUITests.m */; };
+		255389031D990C5D00000967 /* WKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 255389021D990C5D00000967 /* WKTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +37,7 @@
 		255388CE1D990AF800000967 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		255388D01D990AF800000967 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		255388D11D990AF800000967 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		255388D31D990AF800000967 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		255388D41D990AF800000967 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		255388D71D990AF800000967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		255388D91D990AF800000967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		255388DC1D990AF800000967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		255388DE1D990AF800000967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		255388E31D990AF800000967 /* WKBSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKBSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		255388E71D990AF800000967 /* WKBSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBSTests.m; sourceTree = "<group>"; };
@@ -51,6 +45,9 @@
 		255388EE1D990AF900000967 /* WKBSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKBSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		255388F21D990AF900000967 /* WKBSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBSUITests.m; sourceTree = "<group>"; };
 		255388F41D990AF900000967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255389011D990C5D00000967 /* WKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTabBarController.h; sourceTree = "<group>"; };
+		255389021D990C5D00000967 /* WKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTabBarController.m; sourceTree = "<group>"; };
+		255389041D99122F00000967 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +98,7 @@
 		255388CC1D990AF800000967 /* WKBS */ = {
 			isa = PBXGroup;
 			children = (
-				255388D01D990AF800000967 /* AppDelegate.h */,
-				255388D11D990AF800000967 /* AppDelegate.m */,
-				255388D31D990AF800000967 /* ViewController.h */,
-				255388D41D990AF800000967 /* ViewController.m */,
-				255388D61D990AF800000967 /* Main.storyboard */,
-				255388D91D990AF800000967 /* Assets.xcassets */,
-				255388DB1D990AF800000967 /* LaunchScreen.storyboard */,
-				255388DE1D990AF800000967 /* Info.plist */,
+				255389001D990BDA00000967 /* Classes */,
 				255388CD1D990AF800000967 /* Supporting Files */,
 			);
 			path = WKBS;
@@ -117,7 +107,10 @@
 		255388CD1D990AF800000967 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				255388D91D990AF800000967 /* Assets.xcassets */,
+				255388DE1D990AF800000967 /* Info.plist */,
 				255388CE1D990AF800000967 /* main.m */,
+				255389041D99122F00000967 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +131,17 @@
 				255388F41D990AF900000967 /* Info.plist */,
 			);
 			path = WKBSUITests;
+			sourceTree = "<group>";
+		};
+		255389001D990BDA00000967 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				255388D01D990AF800000967 /* AppDelegate.h */,
+				255388D11D990AF800000967 /* AppDelegate.m */,
+				255389011D990C5D00000967 /* WKTabBarController.h */,
+				255389021D990C5D00000967 /* WKTabBarController.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +206,7 @@
 		255388C21D990AF800000967 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WK;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "阿拉斯加的🐶";
 				TargetAttributes = {
@@ -249,9 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				255388DD1D990AF800000967 /* LaunchScreen.storyboard in Resources */,
 				255388DA1D990AF800000967 /* Assets.xcassets in Resources */,
-				255388D81D990AF800000967 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,9 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				255388D51D990AF800000967 /* ViewController.m in Sources */,
 				255388D21D990AF800000967 /* AppDelegate.m in Sources */,
 				255388CF1D990AF800000967 /* main.m in Sources */,
+				255389031D990C5D00000967 /* WKTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,25 +315,6 @@
 			targetProxy = 255388EF1D990AF900000967 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		255388D61D990AF800000967 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				255388D71D990AF800000967 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		255388DB1D990AF800000967 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				255388DC1D990AF800000967 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		255388F51D990AF900000967 /* Debug */ = {
@@ -425,7 +409,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 8Y2G5F25VK;
+				GCC_PREFIX_HEADER = WKBS/PrefixHeader.pch;
 				INFOPLIST_FILE = WKBS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alasijiadegou.WKBS;
@@ -437,7 +423,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 8Y2G5F25VK;
+				GCC_PREFIX_HEADER = WKBS/PrefixHeader.pch;
 				INFOPLIST_FILE = WKBS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alasijiadegou.WKBS;
