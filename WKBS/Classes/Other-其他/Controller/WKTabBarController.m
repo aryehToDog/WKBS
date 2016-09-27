@@ -12,6 +12,7 @@
 #import "WKNewViewController.h"
 #import "WKFollowViewController.h"
 #import "WKMeViewController.h"
+#import "WKNavigationController.h"
 @interface WKTabBarController ()
 
 @end
@@ -46,13 +47,13 @@
     
     
     //精华
-    [self setupOneController:[[WKEssenceViewController alloc]init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+    [self setupOneController:[[WKNavigationController alloc]initWithRootViewController:[[WKEssenceViewController alloc]init]] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
     //新帖
-    [self setupOneController:[[WKNewViewController alloc]init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    [self setupOneController:[[WKNavigationController alloc]initWithRootViewController:[[WKNewViewController alloc]init]] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     //关注
-    [self setupOneController:[[WKFollowViewController alloc]init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    [self setupOneController:[[WKNavigationController alloc]initWithRootViewController:[[WKFollowViewController alloc]init]] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     //我
-    [self setupOneController:[[WKMeViewController alloc]init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    [self setupOneController:[[WKNavigationController alloc]initWithRootViewController:[[WKMeViewController alloc]init]] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
 }
 
 /** 初始化一个控制器 */
@@ -60,10 +61,10 @@
 
     UIViewController *vc = Vc;
     vc.tabBarItem.title = title;
-    vc.tabBarItem.image = [UIImage imageNamed:image];
-
-//    vc.view.backgroundColor = WKRandomColor;
-    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
+    if (image) {
+        vc.tabBarItem.image = [UIImage imageNamed:image];
+        vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
+    }
     [self addChildViewController:vc];
    
 }

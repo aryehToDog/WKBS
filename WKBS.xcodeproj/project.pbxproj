@@ -18,6 +18,9 @@
 		250D8D501D9A21CE00C634F8 /* WKNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D8D4F1D9A21CE00C634F8 /* WKNewViewController.m */; };
 		250D8D531D9A21E300C634F8 /* WKFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D8D521D9A21E300C634F8 /* WKFollowViewController.m */; };
 		250D8D561D9A21FA00C634F8 /* WKMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D8D551D9A21FA00C634F8 /* WKMeViewController.m */; };
+		250D8D591D9A644400C634F8 /* WKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D8D581D9A644400C634F8 /* WKNavigationController.m */; };
+		250D8D5C1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D8D5B1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.m */; };
+		250D8D5F1D9A77B500C634F8 /* WKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D8D5E1D9A77B500C634F8 /* WKSettingViewController.m */; };
 		255388DA1D990AF800000967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255388D91D990AF800000967 /* Assets.xcassets */; };
 		255388E81D990AF800000967 /* WKBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388E71D990AF800000967 /* WKBSTests.m */; };
 		255388F31D990AF900000967 /* WKBSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388F21D990AF900000967 /* WKBSUITests.m */; };
@@ -61,6 +64,12 @@
 		250D8D521D9A21E300C634F8 /* WKFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKFollowViewController.m; sourceTree = "<group>"; };
 		250D8D541D9A21FA00C634F8 /* WKMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKMeViewController.h; sourceTree = "<group>"; };
 		250D8D551D9A21FA00C634F8 /* WKMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKMeViewController.m; sourceTree = "<group>"; };
+		250D8D571D9A644400C634F8 /* WKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKNavigationController.h; sourceTree = "<group>"; };
+		250D8D581D9A644400C634F8 /* WKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKNavigationController.m; sourceTree = "<group>"; };
+		250D8D5A1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WKExtension.h"; sourceTree = "<group>"; };
+		250D8D5B1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WKExtension.m"; sourceTree = "<group>"; };
+		250D8D5D1D9A77B500C634F8 /* WKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSettingViewController.h; sourceTree = "<group>"; };
+		250D8D5E1D9A77B500C634F8 /* WKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSettingViewController.m; sourceTree = "<group>"; };
 		255388CA1D990AF800000967 /* WKBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		255388D91D990AF800000967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		255388E31D990AF800000967 /* WKBSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKBSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +198,8 @@
 			children = (
 				250D8D541D9A21FA00C634F8 /* WKMeViewController.h */,
 				250D8D551D9A21FA00C634F8 /* WKMeViewController.m */,
+				250D8D5D1D9A77B500C634F8 /* WKSettingViewController.h */,
+				250D8D5E1D9A77B500C634F8 /* WKSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +272,8 @@
 				250D8D411D9A170300C634F8 /* Foundation+Log.m */,
 				250D8D421D9A170300C634F8 /* UIView+Frame.h */,
 				250D8D431D9A170300C634F8 /* UIView+Frame.m */,
+				250D8D5A1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.h */,
+				250D8D5B1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -270,6 +283,8 @@
 			children = (
 				250D8D341D9A14B800C634F8 /* WKTabBarController.h */,
 				250D8D351D9A14B800C634F8 /* WKTabBarController.m */,
+				250D8D571D9A644400C634F8 /* WKNavigationController.h */,
+				250D8D581D9A644400C634F8 /* WKNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -482,13 +497,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250D8D591D9A644400C634F8 /* WKNavigationController.m in Sources */,
 				250D8D531D9A21E300C634F8 /* WKFollowViewController.m in Sources */,
 				250D8D3B1D9A14B800C634F8 /* AppDelegate.m in Sources */,
 				250D8D4D1D9A21B500C634F8 /* WKEssenceViewController.m in Sources */,
+				250D8D5F1D9A77B500C634F8 /* WKSettingViewController.m in Sources */,
 				250D8D3E1D9A14B800C634F8 /* main.m in Sources */,
 				250D8D501D9A21CE00C634F8 /* WKNewViewController.m in Sources */,
 				250D8D3C1D9A14B800C634F8 /* WKTabBarController.m in Sources */,
 				250D8D561D9A21FA00C634F8 /* WKMeViewController.m in Sources */,
+				250D8D5C1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.m in Sources */,
 				250D8D451D9A170300C634F8 /* UIView+Frame.m in Sources */,
 				250D8D441D9A170300C634F8 /* Foundation+Log.m in Sources */,
 				250D8D4A1D9A18E000C634F8 /* WKTabBar.m in Sources */,

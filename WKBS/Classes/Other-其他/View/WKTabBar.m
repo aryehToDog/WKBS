@@ -34,6 +34,17 @@
 }
 
 
+- (instancetype)initWithFrame:(CGRect)frame {
+
+    if (self = [super initWithFrame:frame]) {
+        
+        //设置背景图片
+        [self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
+        
+    }
+    return self;
+}
+
 - (void)layoutSubviews {
 
     [super layoutSubviews];
