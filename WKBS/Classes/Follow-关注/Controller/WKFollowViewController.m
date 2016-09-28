@@ -7,7 +7,7 @@
 //
 
 #import "WKFollowViewController.h"
-
+#import "WKLoginRegisterViewController.h"
 @interface WKFollowViewController ()
 
 @end
@@ -31,6 +31,13 @@
     
 }
 
+- (IBAction)loginBtn {
+    
+    WKLoginRegisterViewController *login = [[WKLoginRegisterViewController alloc]init];
+    
+    [self presentViewController:login animated:YES completion:nil];
+    
+}
 
 
 @end
