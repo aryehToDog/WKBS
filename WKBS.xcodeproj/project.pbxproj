@@ -24,6 +24,8 @@
 		255388DA1D990AF800000967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255388D91D990AF800000967 /* Assets.xcassets */; };
 		255388E81D990AF800000967 /* WKBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388E71D990AF800000967 /* WKBSTests.m */; };
 		255388F31D990AF900000967 /* WKBSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388F21D990AF900000967 /* WKBSUITests.m */; };
+		2595CA611D9CB8F6007B84CB /* WKLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2595CA601D9CB8F6007B84CB /* WKLoginRegisterTextField.m */; };
+		2595CA641D9D03C5007B84CB /* UITextField+WKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2595CA631D9D03C5007B84CB /* UITextField+WKExtension.m */; };
 		25B8AFCF1D9BBFA100C5C4F4 /* WKFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B8AFCE1D9BBFA100C5C4F4 /* WKFollowViewController.xib */; };
 		25B8AFD31D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B8AFD11D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m */; };
 		25B8AFD41D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B8AFD21D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib */; };
@@ -82,6 +84,10 @@
 		255388EE1D990AF900000967 /* WKBSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKBSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		255388F21D990AF900000967 /* WKBSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBSUITests.m; sourceTree = "<group>"; };
 		255388F41D990AF900000967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2595CA5F1D9CB8F6007B84CB /* WKLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLoginRegisterTextField.h; sourceTree = "<group>"; };
+		2595CA601D9CB8F6007B84CB /* WKLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLoginRegisterTextField.m; sourceTree = "<group>"; };
+		2595CA621D9D03C5007B84CB /* UITextField+WKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+WKExtension.h"; sourceTree = "<group>"; };
+		2595CA631D9D03C5007B84CB /* UITextField+WKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WKExtension.m"; sourceTree = "<group>"; };
 		25B8AFCE1D9BBFA100C5C4F4 /* WKFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKFollowViewController.xib; sourceTree = "<group>"; };
 		25B8AFD01D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLoginRegisterViewController.h; sourceTree = "<group>"; };
 		25B8AFD11D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLoginRegisterViewController.m; sourceTree = "<group>"; };
@@ -285,6 +291,8 @@
 				250D8D431D9A170300C634F8 /* UIView+Frame.m */,
 				250D8D5A1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.h */,
 				250D8D5B1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.m */,
+				2595CA621D9D03C5007B84CB /* UITextField+WKExtension.h */,
+				2595CA631D9D03C5007B84CB /* UITextField+WKExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -317,6 +325,8 @@
 				250D8D491D9A18E000C634F8 /* WKTabBar.m */,
 				25B8AFD51D9BC85E00C5C4F4 /* WKQuickLoginButton.h */,
 				25B8AFD61D9BC85E00C5C4F4 /* WKQuickLoginButton.m */,
+				2595CA5F1D9CB8F6007B84CB /* WKLoginRegisterTextField.h */,
+				2595CA601D9CB8F6007B84CB /* WKLoginRegisterTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -518,6 +528,7 @@
 				250D8D591D9A644400C634F8 /* WKNavigationController.m in Sources */,
 				250D8D531D9A21E300C634F8 /* WKFollowViewController.m in Sources */,
 				250D8D3B1D9A14B800C634F8 /* AppDelegate.m in Sources */,
+				2595CA641D9D03C5007B84CB /* UITextField+WKExtension.m in Sources */,
 				25B8AFD31D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m in Sources */,
 				250D8D4D1D9A21B500C634F8 /* WKEssenceViewController.m in Sources */,
 				250D8D5F1D9A77B500C634F8 /* WKSettingViewController.m in Sources */,
@@ -529,6 +540,7 @@
 				250D8D451D9A170300C634F8 /* UIView+Frame.m in Sources */,
 				250D8D441D9A170300C634F8 /* Foundation+Log.m in Sources */,
 				250D8D4A1D9A18E000C634F8 /* WKTabBar.m in Sources */,
+				2595CA611D9CB8F6007B84CB /* WKLoginRegisterTextField.m in Sources */,
 				25B8AFD71D9BC85E00C5C4F4 /* WKQuickLoginButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

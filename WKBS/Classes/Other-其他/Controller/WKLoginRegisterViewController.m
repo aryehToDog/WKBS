@@ -62,4 +62,12 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+/** 
+ *   更换状态栏颜色
+ */
+- (UIStatusBarStyle)preferredStatusBarStyle {
+
+    return UIStatusBarStyleLightContent;
+}
+
 @end

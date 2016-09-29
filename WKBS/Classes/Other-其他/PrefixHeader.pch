@@ -13,6 +13,7 @@
 
 #import "UIView+Frame.h"
 #import "UIBarButtonItem+WKExtension.h"
+#import "UITextField+WKExtension.h"
 #define WKFunc WKLog(@"%s",__func__);
 
 /*** 日志 ***/
