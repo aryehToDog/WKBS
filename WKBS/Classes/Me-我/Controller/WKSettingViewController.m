@@ -7,10 +7,12 @@
 //
 
 #import "WKSettingViewController.h"
-
+#import "WKClearCacheCell.h"
 @interface WKSettingViewController ()
 
 @end
+
+static NSString * const clearCacheID = @"clearCache";
 
 @implementation WKSettingViewController
 
@@ -23,6 +25,8 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = WKCommonBgColor;
+    
+    [self.tableView registerClass:[WKClearCacheCell class] forCellReuseIdentifier:clearCacheID];
     
 }
 
@@ -39,17 +43,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *ID = @"setting";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
-    
-    cell.textLabel.text = @"清楚缓存";
-    
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    WKClearCacheCell *cell = [tableView dequeueReusableCellWithIdentifier:clearCacheID];
     
     return cell;
 }

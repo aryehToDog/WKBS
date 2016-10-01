@@ -31,12 +31,20 @@
 		255388DA1D990AF800000967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255388D91D990AF800000967 /* Assets.xcassets */; };
 		255388E81D990AF800000967 /* WKBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388E71D990AF800000967 /* WKBSTests.m */; };
 		255388F31D990AF900000967 /* WKBSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388F21D990AF900000967 /* WKBSUITests.m */; };
+		259034461D9FD13D00F9B7DE /* NSString+WKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 259034451D9FD13D00F9B7DE /* NSString+WKExtension.m */; };
+		259034491D9FD2C900F9B7DE /* WKClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 259034481D9FD2C900F9B7DE /* WKClearCacheCell.m */; };
 		2595CA611D9CB8F6007B84CB /* WKLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2595CA601D9CB8F6007B84CB /* WKLoginRegisterTextField.m */; };
 		2595CA641D9D03C5007B84CB /* UITextField+WKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2595CA631D9D03C5007B84CB /* UITextField+WKExtension.m */; };
 		25B8AFCF1D9BBFA100C5C4F4 /* WKFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B8AFCE1D9BBFA100C5C4F4 /* WKFollowViewController.xib */; };
 		25B8AFD31D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B8AFD11D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m */; };
 		25B8AFD41D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B8AFD21D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib */; };
 		25B8AFD71D9BC85E00C5C4F4 /* WKQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B8AFD61D9BC85E00C5C4F4 /* WKQuickLoginButton.m */; };
+		25C5549D1D9FC20A00E4ECF5 /* WKTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C5549C1D9FC20A00E4ECF5 /* WKTitleButton.m */; };
+		25C554A01D9FC5C900E4ECF5 /* WKAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C5549F1D9FC5C900E4ECF5 /* WKAllViewController.m */; };
+		25C554A31D9FC5D500E4ECF5 /* WKVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C554A21D9FC5D500E4ECF5 /* WKVideoViewController.m */; };
+		25C554A61D9FC5E000E4ECF5 /* WKVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C554A51D9FC5E000E4ECF5 /* WKVoiceViewController.m */; };
+		25C554A91D9FC5EB00E4ECF5 /* WKPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C554A81D9FC5EB00E4ECF5 /* WKPictureViewController.m */; };
+		25C554AC1D9FC5FA00E4ECF5 /* WKWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C554AB1D9FC5FA00E4ECF5 /* WKWordViewController.m */; };
 		F5C38657981942440E7DE349 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D857E9336B67A5FD5763C87 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +113,10 @@
 		255388EE1D990AF900000967 /* WKBSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKBSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		255388F21D990AF900000967 /* WKBSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBSUITests.m; sourceTree = "<group>"; };
 		255388F41D990AF900000967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		259034441D9FD13D00F9B7DE /* NSString+WKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WKExtension.h"; sourceTree = "<group>"; };
+		259034451D9FD13D00F9B7DE /* NSString+WKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WKExtension.m"; sourceTree = "<group>"; };
+		259034471D9FD2C900F9B7DE /* WKClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKClearCacheCell.h; sourceTree = "<group>"; };
+		259034481D9FD2C900F9B7DE /* WKClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKClearCacheCell.m; sourceTree = "<group>"; };
 		2595CA5F1D9CB8F6007B84CB /* WKLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLoginRegisterTextField.h; sourceTree = "<group>"; };
 		2595CA601D9CB8F6007B84CB /* WKLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLoginRegisterTextField.m; sourceTree = "<group>"; };
 		2595CA621D9D03C5007B84CB /* UITextField+WKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+WKExtension.h"; sourceTree = "<group>"; };
@@ -115,6 +127,18 @@
 		25B8AFD21D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		25B8AFD51D9BC85E00C5C4F4 /* WKQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKQuickLoginButton.h; sourceTree = "<group>"; };
 		25B8AFD61D9BC85E00C5C4F4 /* WKQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKQuickLoginButton.m; sourceTree = "<group>"; };
+		25C5549B1D9FC20A00E4ECF5 /* WKTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTitleButton.h; sourceTree = "<group>"; };
+		25C5549C1D9FC20A00E4ECF5 /* WKTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTitleButton.m; sourceTree = "<group>"; };
+		25C5549E1D9FC5C900E4ECF5 /* WKAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKAllViewController.h; sourceTree = "<group>"; };
+		25C5549F1D9FC5C900E4ECF5 /* WKAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKAllViewController.m; sourceTree = "<group>"; };
+		25C554A11D9FC5D500E4ECF5 /* WKVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKVideoViewController.h; sourceTree = "<group>"; };
+		25C554A21D9FC5D500E4ECF5 /* WKVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKVideoViewController.m; sourceTree = "<group>"; };
+		25C554A41D9FC5E000E4ECF5 /* WKVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKVoiceViewController.h; sourceTree = "<group>"; };
+		25C554A51D9FC5E000E4ECF5 /* WKVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKVoiceViewController.m; sourceTree = "<group>"; };
+		25C554A71D9FC5EB00E4ECF5 /* WKPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPictureViewController.h; sourceTree = "<group>"; };
+		25C554A81D9FC5EB00E4ECF5 /* WKPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKPictureViewController.m; sourceTree = "<group>"; };
+		25C554AA1D9FC5FA00E4ECF5 /* WKWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWordViewController.h; sourceTree = "<group>"; };
+		25C554AB1D9FC5FA00E4ECF5 /* WKWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWordViewController.m; sourceTree = "<group>"; };
 		4D857E9336B67A5FD5763C87 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B295244922BD9E9B869B4A60 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BA6AA61C0FDA4AD1513C88A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +197,16 @@
 			children = (
 				250D8D4B1D9A21B500C634F8 /* WKEssenceViewController.h */,
 				250D8D4C1D9A21B500C634F8 /* WKEssenceViewController.m */,
+				25C5549E1D9FC5C900E4ECF5 /* WKAllViewController.h */,
+				25C5549F1D9FC5C900E4ECF5 /* WKAllViewController.m */,
+				25C554A11D9FC5D500E4ECF5 /* WKVideoViewController.h */,
+				25C554A21D9FC5D500E4ECF5 /* WKVideoViewController.m */,
+				25C554A41D9FC5E000E4ECF5 /* WKVoiceViewController.h */,
+				25C554A51D9FC5E000E4ECF5 /* WKVoiceViewController.m */,
+				25C554A71D9FC5EB00E4ECF5 /* WKPictureViewController.h */,
+				25C554A81D9FC5EB00E4ECF5 /* WKPictureViewController.m */,
+				25C554AA1D9FC5FA00E4ECF5 /* WKWordViewController.h */,
+				25C554AB1D9FC5FA00E4ECF5 /* WKWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +221,8 @@
 		250D8D221D9A14B800C634F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				25C5549B1D9FC20A00E4ECF5 /* WKTitleButton.h */,
+				25C5549C1D9FC20A00E4ECF5 /* WKTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -267,6 +303,8 @@
 				25036AAB1D9E188C009F5884 /* WKMefootView.m */,
 				25036AB01D9E59BB009F5884 /* WKMeSquareButton.h */,
 				25036AB11D9E59BB009F5884 /* WKMeSquareButton.m */,
+				259034471D9FD2C900F9B7DE /* WKClearCacheCell.h */,
+				259034481D9FD2C900F9B7DE /* WKClearCacheCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,6 +369,8 @@
 				250D8D5B1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.m */,
 				2595CA621D9D03C5007B84CB /* UITextField+WKExtension.h */,
 				2595CA631D9D03C5007B84CB /* UITextField+WKExtension.m */,
+				259034441D9FD13D00F9B7DE /* NSString+WKExtension.h */,
+				259034451D9FD13D00F9B7DE /* NSString+WKExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -639,13 +679,17 @@
 				250D8D531D9A21E300C634F8 /* WKFollowViewController.m in Sources */,
 				250D8D3B1D9A14B800C634F8 /* AppDelegate.m in Sources */,
 				2595CA641D9D03C5007B84CB /* UITextField+WKExtension.m in Sources */,
+				259034491D9FD2C900F9B7DE /* WKClearCacheCell.m in Sources */,
+				25C554A61D9FC5E000E4ECF5 /* WKVoiceViewController.m in Sources */,
 				25036AB61D9E5E8D009F5884 /* WKWebViewController.m in Sources */,
 				25B8AFD31D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m in Sources */,
 				25036AAF1D9E1B32009F5884 /* WKSquare.m in Sources */,
 				25036AA91D9E13A1009F5884 /* WKMeCell.m in Sources */,
 				250D8D4D1D9A21B500C634F8 /* WKEssenceViewController.m in Sources */,
 				250D8D5F1D9A77B500C634F8 /* WKSettingViewController.m in Sources */,
+				25C5549D1D9FC20A00E4ECF5 /* WKTitleButton.m in Sources */,
 				25036AA61D9E126E009F5884 /* WKConst.m in Sources */,
+				25C554AC1D9FC5FA00E4ECF5 /* WKWordViewController.m in Sources */,
 				250D8D3E1D9A14B800C634F8 /* main.m in Sources */,
 				250D8D501D9A21CE00C634F8 /* WKNewViewController.m in Sources */,
 				25036AB21D9E59BB009F5884 /* WKMeSquareButton.m in Sources */,
@@ -654,8 +698,12 @@
 				250D8D561D9A21FA00C634F8 /* WKMeViewController.m in Sources */,
 				250D8D5C1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.m in Sources */,
 				250D8D451D9A170300C634F8 /* UIView+Frame.m in Sources */,
+				25C554A91D9FC5EB00E4ECF5 /* WKPictureViewController.m in Sources */,
+				259034461D9FD13D00F9B7DE /* NSString+WKExtension.m in Sources */,
+				25C554A31D9FC5D500E4ECF5 /* WKVideoViewController.m in Sources */,
 				250D8D441D9A170300C634F8 /* Foundation+Log.m in Sources */,
 				250D8D4A1D9A18E000C634F8 /* WKTabBar.m in Sources */,
+				25C554A01D9FC5C900E4ECF5 /* WKAllViewController.m in Sources */,
 				2595CA611D9CB8F6007B84CB /* WKLoginRegisterTextField.m in Sources */,
 				25B8AFD71D9BC85E00C5C4F4 /* WKQuickLoginButton.m in Sources */,
 			);
