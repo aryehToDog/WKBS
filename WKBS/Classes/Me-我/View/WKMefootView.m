@@ -8,7 +8,7 @@
 
 #import "WKMefootView.h"
 #import <MJExtension.h>
-#import <AFNetworking.h>
+#import "WKHTTPSessionManager.h"
 #import "WKSquare.h"
 #import "WKMeSquareButton.h"
 #import "WKWebViewController.h"
@@ -22,7 +22,7 @@
         NSMutableDictionary *parame = [NSMutableDictionary dictionary];
         parame[@"a"] = @"square";
         parame[@"c"] = @"topic";
-        [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:parame progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [[WKHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:parame progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
             //字典数组转模型数组
             NSArray *array = [WKSquare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];

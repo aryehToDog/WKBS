@@ -185,16 +185,17 @@
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
 
     NSUInteger index = scrollView.contentOffset.x / scrollView.wk_width;
-    UIView *childView = self.childViewControllers[index].view;
+//    UIView *childView = self.childViewControllers[index].view;
+    UIViewController *childVc = self.childViewControllers[index];
     
-    if (childView.subviews) {
+    if (childVc.view.superview ) {
         return;
     }
     
     //设置所在控制器的view的frame
-    childView.frame = scrollView.bounds;
+    childVc.view.frame = scrollView.bounds;
     
-    [scrollView addSubview:childView];
+    [scrollView addSubview:childVc.view];
 
 }
 

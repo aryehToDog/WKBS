@@ -31,6 +31,12 @@
 		255388DA1D990AF800000967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255388D91D990AF800000967 /* Assets.xcassets */; };
 		255388E81D990AF800000967 /* WKBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388E71D990AF800000967 /* WKBSTests.m */; };
 		255388F31D990AF900000967 /* WKBSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388F21D990AF900000967 /* WKBSUITests.m */; };
+		2584AF421DA0AA0100FE01F3 /* WKTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584AF411DA0AA0100FE01F3 /* WKTopic.m */; };
+		2584AF451DA0ABBC00FE01F3 /* WKRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584AF441DA0ABBC00FE01F3 /* WKRefreshHeader.m */; };
+		2584AF481DA0B04200FE01F3 /* WKRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584AF471DA0B04200FE01F3 /* WKRefreshFooter.m */; };
+		2584AF4B1DA1267000FE01F3 /* WKHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584AF4A1DA1267000FE01F3 /* WKHTTPSessionManager.m */; };
+		2584AF4F1DA1282700FE01F3 /* WKTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584AF4D1DA1282700FE01F3 /* WKTopicCell.m */; };
+		2584AF501DA1282700FE01F3 /* WKTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2584AF4E1DA1282700FE01F3 /* WKTopicCell.xib */; };
 		259034461D9FD13D00F9B7DE /* NSString+WKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 259034451D9FD13D00F9B7DE /* NSString+WKExtension.m */; };
 		259034491D9FD2C900F9B7DE /* WKClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 259034481D9FD2C900F9B7DE /* WKClearCacheCell.m */; };
 		2595CA611D9CB8F6007B84CB /* WKLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2595CA601D9CB8F6007B84CB /* WKLoginRegisterTextField.m */; };
@@ -113,6 +119,17 @@
 		255388EE1D990AF900000967 /* WKBSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKBSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		255388F21D990AF900000967 /* WKBSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBSUITests.m; sourceTree = "<group>"; };
 		255388F41D990AF900000967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2584AF401DA0AA0100FE01F3 /* WKTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTopic.h; sourceTree = "<group>"; };
+		2584AF411DA0AA0100FE01F3 /* WKTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTopic.m; sourceTree = "<group>"; };
+		2584AF431DA0ABBC00FE01F3 /* WKRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKRefreshHeader.h; sourceTree = "<group>"; };
+		2584AF441DA0ABBC00FE01F3 /* WKRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKRefreshHeader.m; sourceTree = "<group>"; };
+		2584AF461DA0B04200FE01F3 /* WKRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKRefreshFooter.h; sourceTree = "<group>"; };
+		2584AF471DA0B04200FE01F3 /* WKRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKRefreshFooter.m; sourceTree = "<group>"; };
+		2584AF491DA1267000FE01F3 /* WKHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKHTTPSessionManager.h; sourceTree = "<group>"; };
+		2584AF4A1DA1267000FE01F3 /* WKHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKHTTPSessionManager.m; sourceTree = "<group>"; };
+		2584AF4C1DA1282700FE01F3 /* WKTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTopicCell.h; sourceTree = "<group>"; };
+		2584AF4D1DA1282700FE01F3 /* WKTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTopicCell.m; sourceTree = "<group>"; };
+		2584AF4E1DA1282700FE01F3 /* WKTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKTopicCell.xib; sourceTree = "<group>"; };
 		259034441D9FD13D00F9B7DE /* NSString+WKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WKExtension.h"; sourceTree = "<group>"; };
 		259034451D9FD13D00F9B7DE /* NSString+WKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WKExtension.m"; sourceTree = "<group>"; };
 		259034471D9FD2C900F9B7DE /* WKClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKClearCacheCell.h; sourceTree = "<group>"; };
@@ -214,6 +231,8 @@
 		250D8D211D9A14B800C634F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2584AF401DA0AA0100FE01F3 /* WKTopic.h */,
+				2584AF411DA0AA0100FE01F3 /* WKTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +242,9 @@
 			children = (
 				25C5549B1D9FC20A00E4ECF5 /* WKTitleButton.h */,
 				25C5549C1D9FC20A00E4ECF5 /* WKTitleButton.m */,
+				2584AF4C1DA1282700FE01F3 /* WKTopicCell.h */,
+				2584AF4D1DA1282700FE01F3 /* WKTopicCell.m */,
+				2584AF4E1DA1282700FE01F3 /* WKTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -351,6 +373,8 @@
 				25036AA41D9E126E009F5884 /* WKConst.h */,
 				25036AA51D9E126E009F5884 /* WKConst.m */,
 				250D8D311D9A14B800C634F8 /* AppDelegate.m */,
+				2584AF491DA1267000FE01F3 /* WKHTTPSessionManager.h */,
+				2584AF4A1DA1267000FE01F3 /* WKHTTPSessionManager.m */,
 				250D8D321D9A14B800C634F8 /* Category */,
 				250D8D331D9A14B800C634F8 /* Controller */,
 				250D8D381D9A14B800C634F8 /* Model */,
@@ -405,6 +429,10 @@
 				25B8AFD61D9BC85E00C5C4F4 /* WKQuickLoginButton.m */,
 				2595CA5F1D9CB8F6007B84CB /* WKLoginRegisterTextField.h */,
 				2595CA601D9CB8F6007B84CB /* WKLoginRegisterTextField.m */,
+				2584AF431DA0ABBC00FE01F3 /* WKRefreshHeader.h */,
+				2584AF441DA0ABBC00FE01F3 /* WKRefreshHeader.m */,
+				2584AF461DA0B04200FE01F3 /* WKRefreshFooter.h */,
+				2584AF471DA0B04200FE01F3 /* WKRefreshFooter.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -599,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25036AB71D9E5E8D009F5884 /* WKWebViewController.xib in Resources */,
+				2584AF501DA1282700FE01F3 /* WKTopicCell.xib in Resources */,
 				250D8D471D9A176200C634F8 /* Info.plist in Resources */,
 				25B8AFCF1D9BBFA100C5C4F4 /* WKFollowViewController.xib in Resources */,
 				255388DA1D990AF800000967 /* Assets.xcassets in Resources */,
@@ -678,11 +707,16 @@
 				250D8D591D9A644400C634F8 /* WKNavigationController.m in Sources */,
 				250D8D531D9A21E300C634F8 /* WKFollowViewController.m in Sources */,
 				250D8D3B1D9A14B800C634F8 /* AppDelegate.m in Sources */,
+				2584AF451DA0ABBC00FE01F3 /* WKRefreshHeader.m in Sources */,
 				2595CA641D9D03C5007B84CB /* UITextField+WKExtension.m in Sources */,
+				2584AF4F1DA1282700FE01F3 /* WKTopicCell.m in Sources */,
 				259034491D9FD2C900F9B7DE /* WKClearCacheCell.m in Sources */,
+				2584AF421DA0AA0100FE01F3 /* WKTopic.m in Sources */,
 				25C554A61D9FC5E000E4ECF5 /* WKVoiceViewController.m in Sources */,
+				2584AF4B1DA1267000FE01F3 /* WKHTTPSessionManager.m in Sources */,
 				25036AB61D9E5E8D009F5884 /* WKWebViewController.m in Sources */,
 				25B8AFD31D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m in Sources */,
+				2584AF481DA0B04200FE01F3 /* WKRefreshFooter.m in Sources */,
 				25036AAF1D9E1B32009F5884 /* WKSquare.m in Sources */,
 				25036AA91D9E13A1009F5884 /* WKMeCell.m in Sources */,
 				250D8D4D1D9A21B500C634F8 /* WKEssenceViewController.m in Sources */,
