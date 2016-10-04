@@ -14,6 +14,13 @@
 		25036AB21D9E59BB009F5884 /* WKMeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25036AB11D9E59BB009F5884 /* WKMeSquareButton.m */; };
 		25036AB61D9E5E8D009F5884 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25036AB41D9E5E8D009F5884 /* WKWebViewController.m */; };
 		25036AB71D9E5E8D009F5884 /* WKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25036AB51D9E5E8D009F5884 /* WKWebViewController.xib */; };
+		250AF1601DA3C09300B8F558 /* WKTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 250AF15F1DA3C09300B8F558 /* WKTopicPictureView.m */; };
+		250AF1621DA3C09F00B8F558 /* WKTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250AF1611DA3C09F00B8F558 /* WKTopicPictureView.xib */; };
+		250AF1651DA3C8AF00B8F558 /* WKTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1641DA3C8AF00B8F558 /* WKTopicVideoView.m */; };
+		250AF1671DA3C8B900B8F558 /* WKTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250AF1661DA3C8B900B8F558 /* WKTopicVideoView.xib */; };
+		250AF16A1DA3CC4C00B8F558 /* WKTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1691DA3CC4C00B8F558 /* WKTopicVoiceView.m */; };
+		250AF16C1DA3CC5700B8F558 /* WKTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250AF16B1DA3CC5700B8F558 /* WKTopicVoiceView.xib */; };
+		250AF16F1DA3D39400B8F558 /* WKTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250AF16E1DA3D39400B8F558 /* WKTopicViewController.m */; };
 		250D8D3B1D9A14B800C634F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D8D311D9A14B800C634F8 /* AppDelegate.m */; };
 		250D8D3C1D9A14B800C634F8 /* WKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D8D351D9A14B800C634F8 /* WKTabBarController.m */; };
 		250D8D3E1D9A14B800C634F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D8D371D9A14B800C634F8 /* main.m */; };
@@ -89,6 +96,17 @@
 		25036AB31D9E5E8D009F5884 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		25036AB41D9E5E8D009F5884 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		25036AB51D9E5E8D009F5884 /* WKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKWebViewController.xib; sourceTree = "<group>"; };
+		250AF15E1DA3C09300B8F558 /* WKTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTopicPictureView.h; sourceTree = "<group>"; };
+		250AF15F1DA3C09300B8F558 /* WKTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTopicPictureView.m; sourceTree = "<group>"; };
+		250AF1611DA3C09F00B8F558 /* WKTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKTopicPictureView.xib; sourceTree = "<group>"; };
+		250AF1631DA3C8AF00B8F558 /* WKTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTopicVideoView.h; sourceTree = "<group>"; };
+		250AF1641DA3C8AF00B8F558 /* WKTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTopicVideoView.m; sourceTree = "<group>"; };
+		250AF1661DA3C8B900B8F558 /* WKTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKTopicVideoView.xib; sourceTree = "<group>"; };
+		250AF1681DA3CC4C00B8F558 /* WKTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTopicVoiceView.h; sourceTree = "<group>"; };
+		250AF1691DA3CC4C00B8F558 /* WKTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTopicVoiceView.m; sourceTree = "<group>"; };
+		250AF16B1DA3CC5700B8F558 /* WKTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKTopicVoiceView.xib; sourceTree = "<group>"; };
+		250AF16D1DA3D39400B8F558 /* WKTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTopicViewController.h; sourceTree = "<group>"; };
+		250AF16E1DA3D39400B8F558 /* WKTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTopicViewController.m; sourceTree = "<group>"; };
 		250D8D301D9A14B800C634F8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		250D8D311D9A14B800C634F8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		250D8D341D9A14B800C634F8 /* WKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTabBarController.h; sourceTree = "<group>"; };
@@ -236,6 +254,8 @@
 				25C554A81D9FC5EB00E4ECF5 /* WKPictureViewController.m */,
 				25C554AA1D9FC5FA00E4ECF5 /* WKWordViewController.h */,
 				25C554AB1D9FC5FA00E4ECF5 /* WKWordViewController.m */,
+				250AF16D1DA3D39400B8F558 /* WKTopicViewController.h */,
+				250AF16E1DA3D39400B8F558 /* WKTopicViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +281,15 @@
 				2584AF4C1DA1282700FE01F3 /* WKTopicCell.h */,
 				2584AF4D1DA1282700FE01F3 /* WKTopicCell.m */,
 				2584AF4E1DA1282700FE01F3 /* WKTopicCell.xib */,
+				250AF15E1DA3C09300B8F558 /* WKTopicPictureView.h */,
+				250AF15F1DA3C09300B8F558 /* WKTopicPictureView.m */,
+				250AF1611DA3C09F00B8F558 /* WKTopicPictureView.xib */,
+				250AF1631DA3C8AF00B8F558 /* WKTopicVideoView.h */,
+				250AF1641DA3C8AF00B8F558 /* WKTopicVideoView.m */,
+				250AF1661DA3C8B900B8F558 /* WKTopicVideoView.xib */,
+				250AF1681DA3CC4C00B8F558 /* WKTopicVoiceView.h */,
+				250AF1691DA3CC4C00B8F558 /* WKTopicVoiceView.m */,
+				250AF16B1DA3CC5700B8F558 /* WKTopicVoiceView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -646,7 +675,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250AF1671DA3C8B900B8F558 /* WKTopicVideoView.xib in Resources */,
 				25036AB71D9E5E8D009F5884 /* WKWebViewController.xib in Resources */,
+				250AF16C1DA3CC5700B8F558 /* WKTopicVoiceView.xib in Resources */,
+				250AF1621DA3C09F00B8F558 /* WKTopicPictureView.xib in Resources */,
 				2584AF501DA1282700FE01F3 /* WKTopicCell.xib in Resources */,
 				250D8D471D9A176200C634F8 /* Info.plist in Resources */,
 				25B8AFCF1D9BBFA100C5C4F4 /* WKFollowViewController.xib in Resources */,
@@ -724,8 +756,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250AF1651DA3C8AF00B8F558 /* WKTopicVideoView.m in Sources */,
 				250D8D591D9A644400C634F8 /* WKNavigationController.m in Sources */,
 				250D8D531D9A21E300C634F8 /* WKFollowViewController.m in Sources */,
+				250AF16A1DA3CC4C00B8F558 /* WKTopicVoiceView.m in Sources */,
 				250D8D3B1D9A14B800C634F8 /* AppDelegate.m in Sources */,
 				2584AF451DA0ABBC00FE01F3 /* WKRefreshHeader.m in Sources */,
 				2595CA641D9D03C5007B84CB /* UITextField+WKExtension.m in Sources */,
@@ -744,10 +778,12 @@
 				250D8D4D1D9A21B500C634F8 /* WKEssenceViewController.m in Sources */,
 				250D8D5F1D9A77B500C634F8 /* WKSettingViewController.m in Sources */,
 				25C5549D1D9FC20A00E4ECF5 /* WKTitleButton.m in Sources */,
+				250AF16F1DA3D39400B8F558 /* WKTopicViewController.m in Sources */,
 				25036AA61D9E126E009F5884 /* WKConst.m in Sources */,
 				25C554AC1D9FC5FA00E4ECF5 /* WKWordViewController.m in Sources */,
 				250D8D3E1D9A14B800C634F8 /* main.m in Sources */,
 				258C62FA1DA2246900124659 /* NSDate+Extension.m in Sources */,
+				250AF1601DA3C09300B8F558 /* WKTopicPictureView.m in Sources */,
 				250D8D501D9A21CE00C634F8 /* WKNewViewController.m in Sources */,
 				25036AB21D9E59BB009F5884 /* WKMeSquareButton.m in Sources */,
 				250D8D3C1D9A14B800C634F8 /* WKTabBarController.m in Sources */,

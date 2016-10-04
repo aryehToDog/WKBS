@@ -9,6 +9,7 @@
 #import "WKTopic.h"
 #import <MJExtension.h>
 #import "WKComment.h"
+#import "WKUser.h"
 static NSDateFormatter *fmt_;
 static NSCalendar *calendar_;
 
@@ -23,6 +24,15 @@ static NSCalendar *calendar_;
 
 }
 
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+
+    return @{
+             @"small_image" : @"image0",
+             @"middle_image" : @"image1",
+             @"large_image" : @"image2",
+             };
+
+}
 
 + (void)initialize {
 
@@ -75,5 +85,60 @@ static NSCalendar *calendar_;
     }
 
 }
+
+/** 
+ *   自定义返回的行高
+ */
+- (CGFloat)cellHight {
+
+    //图片的高度
+    _cellHight = 18 + 35 + 15;
+    
+    //返回文字的大小
+    CGFloat width = [UIScreen mainScreen].bounds.size.width - 2 * WKMargin;
+    CGFloat height = MAXFLOAT;
+    CGSize textMaxSize = CGSizeMake(width, height);
+    //获取文字的最大高度
+    CGSize textSize = [self.text boundingRectWithSize:textMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15] } context:nil].size;
+    _cellHight += textSize.height + WKMargin;
+    
+    //中间的内容
+    if (self.type != WKTopicTypeWord) {
+        
+        //获取图片的真实高度
+        CGFloat contentH = width * self.height / self.width;
+        //判断如果是超长图片
+        if (contentH >= [UIScreen mainScreen].bounds.size.height) {
+            
+            contentH = 200;
+            self.bigPicture = YES;
+        }
+        
+        //计算所在帖子View的frame
+        self.contentF = CGRectMake(WKMargin, _cellHight, width, contentH);
+        //计算cellHeight
+        _cellHight += contentH + WKMargin;
+        
+    }
+    
+    //计算最热评论的高度
+    if (self.top_cmt.lastObject) {
+        
+        _cellHight += 19.5;
+        WKComment *cmt = [self.top_cmt lastObject];
+        NSString *username = cmt.user.username;
+        NSString *content = cmt.content;
+        
+        NSString *topCmtContent = [NSString stringWithFormat:@"%@ : %@",username,content];
+        CGSize topCmtContentSize = [topCmtContent boundingRectWithSize:textMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13] } context:nil].size;
+        _cellHight += topCmtContentSize.height + WKMargin;
+    }
+    
+    //加底部的工具条
+    _cellHight += 35 + WKMargin;
+    
+    return _cellHight;
+}
+
 
 @end

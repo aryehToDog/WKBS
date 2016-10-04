@@ -11,6 +11,9 @@
 #import "WKTopic.h"
 #import "WKUser.h"
 #import "WKComment.h"
+#import "WKTopicPictureView.h"
+#import "WKTopicVideoView.h"
+#import "WKTopicVoiceView.h"
 @interface WKTopicCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -26,10 +29,44 @@
 /** 最新评论label */
 @property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
 
-
+@property (nonatomic,strong)WKTopicPictureView *pictureView;
+@property (nonatomic,strong)WKTopicVideoView *videoView;
+@property (nonatomic,strong)WKTopicVoiceView *voiceView;
 @end
 
 @implementation WKTopicCell
+
+#pragma mark - 懒加载
+- (WKTopicPictureView *)pictureView {
+
+    if (!_pictureView) {
+        
+        _pictureView = [WKTopicPictureView pictureView];
+        [self.contentView addSubview:_pictureView];
+    }
+    return _pictureView;
+}
+
+- (WKTopicVideoView *)videoView {
+
+    if (!_videoView) {
+        _videoView = [WKTopicVideoView videoView];
+        [self.contentView addSubview:_videoView];
+    }
+    return _videoView;
+}
+
+- (WKTopicVoiceView *)voiceView {
+
+    if (!_voiceView) {
+        _voiceView = [WKTopicVoiceView voiceView];
+        [self.contentView addSubview:_voiceView];
+    }
+
+    return _voiceView;
+}
+
+
 - (IBAction)more:(UIButton *)sender {
     
     UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
@@ -84,6 +121,36 @@
         self.topCmtView.hidden = YES;
     }
     
+    
+    //设置加载不同帖子的内容
+    if (topic.type == WKTopicTypeVideo) {    //加载视频
+        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+        
+        self.videoView.hidden = NO;
+        self.videoView.frame = topic.contentF;
+        self.videoView.topic = topic;
+        
+    } else if (topic.type == WKTopicTypeVoice){  //加载音频
+        self.videoView.hidden = YES;
+        self.pictureView.hidden = YES;
+        
+        self.voiceView.hidden = NO;
+        self.voiceView.frame = topic.contentF;
+        self.voiceView.topic = topic;
+    
+    }else if (topic.type == WKTopicTypePicture){    //加载图片
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        
+        self.pictureView.hidden = NO;
+        self.pictureView.frame = topic.contentF;
+        self.pictureView.topic = topic;
+    }else if (topic.type == WKTopicTypeWord){       //加载段子
+        self.videoView.hidden = YES;
+        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+    }
     
 }
 

@@ -1,12 +1,12 @@
 //
-//  WKAllViewController.m
+//  WKTopicViewController.m
 //  WKBS
 //
-//  Created by 阿拉斯加的狗 on 16/10/1.
+//  Created by 阿拉斯加的狗 on 16/10/4.
 //  Copyright © 2016年 阿拉斯加的🐶. All rights reserved.
 //
 
-#import "WKAllViewController.h"
+#import "WKTopicViewController.h"
 #import "WKHTTPSessionManager.h"
 #import <MJRefresh.h>
 #import "WKRefreshHeader.h"
@@ -16,20 +16,18 @@
 #import "WKRefreshFooter.h"
 #import "WKTopicCell.h"
 
-@interface WKAllViewController ()
-
+@interface WKTopicViewController ()
 @property (nonatomic,strong)NSMutableArray *topics;
 @property (nonatomic,copy)NSString *maxTime;
 @property (nonatomic,strong)WKHTTPSessionManager *manager;
-
 @end
 
 static NSString *const topicId = @"topic";
 
-@implementation WKAllViewController
+@implementation WKTopicViewController
 
 - (WKHTTPSessionManager *)manager {
-
+    
     if (!_manager) {
         
         _manager = [WKHTTPSessionManager manager];
@@ -49,7 +47,7 @@ static NSString *const topicId = @"topic";
 }
 
 - (void)setupTableView {
-
+    
     self.tableView.backgroundColor = WKCommonBgColor;
     self.tableView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
@@ -58,12 +56,12 @@ static NSString *const topicId = @"topic";
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WKTopicCell class]) bundle:nil] forCellReuseIdentifier:topicId];
     
-//    self.tableView.rowHeight = 250;
+    //    self.tableView.rowHeight = 250;
     
 }
 
 - (void)setupRefresh {
-
+    
     //下拉刷新新数据
     self.tableView.mj_header = [WKRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadingNewTopic)];
     //开始首页进行刷新
@@ -73,16 +71,16 @@ static NSString *const topicId = @"topic";
     //上拉刷新更多数据
     self.tableView.mj_footer = [WKRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadingMoreTopic)];
     
-
+    
 }
 
 
-/** 
+/**
  *   下拉刷新更多数据
  */
 
 - (void)loadingNewTopic {
-
+    
     //取消上一次的操作
     [self.manager.dataTasks makeObjectsPerformSelector:@selector(cancel)];
     
@@ -94,7 +92,7 @@ static NSString *const topicId = @"topic";
     
     [self.manager GET:url parameters:parame progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-//        [responseObject writeToFile:@"/Users/alasijiadegou/Desktop/new_top.plist" atomically:YES];
+        //        [responseObject writeToFile:@"/Users/alasijiadegou/Desktop/new_top.plist" atomically:YES];
         self.maxTime = responseObject[@"info"][@"maxtime"];
         
         self.topics = [WKTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
@@ -103,7 +101,7 @@ static NSString *const topicId = @"topic";
         [self.tableView reloadData];
         //结束刷新
         [self.tableView.mj_header endRefreshing];
-
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         //结束刷新
@@ -112,7 +110,7 @@ static NSString *const topicId = @"topic";
         
     }];
     
-
+    
 }
 
 
@@ -150,22 +148,22 @@ static NSString *const topicId = @"topic";
         
     }];
     
-
+    
     
     
 }
 
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
+    
     return self.topics.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    
     
     WKTopic *topic = self.topics[indexPath.row];
-
+    
     WKTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:topicId];
     
     cell.topic = topic;
@@ -177,11 +175,11 @@ static NSString *const topicId = @"topic";
 
 #pragma mark - 代理方法
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    
     WKTopic *topic = self.topics[indexPath.row];
     
     return topic.cellHight;
-
+    
 }
 
 @end
