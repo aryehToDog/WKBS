@@ -26,6 +26,11 @@ static NSString *const topicId = @"topic";
 
 @implementation WKTopicViewController
 
+- (WKTopicType)type {
+
+    return 0;
+}
+
 - (WKHTTPSessionManager *)manager {
     
     if (!_manager) {
@@ -56,7 +61,6 @@ static NSString *const topicId = @"topic";
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WKTopicCell class]) bundle:nil] forCellReuseIdentifier:topicId];
     
-    //    self.tableView.rowHeight = 250;
     
 }
 
@@ -70,8 +74,6 @@ static NSString *const topicId = @"topic";
     
     //上拉刷新更多数据
     self.tableView.mj_footer = [WKRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadingMoreTopic)];
-    
-    
 }
 
 
@@ -88,7 +90,7 @@ static NSString *const topicId = @"topic";
     NSMutableDictionary *parame = [NSMutableDictionary dictionary];
     parame[@"a"] = @"list";
     parame[@"c"] = @"data";
-    parame[@"type"] = @"1";
+    parame[@"type"] = @(self.type);
     
     [self.manager GET:url parameters:parame progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
@@ -126,7 +128,7 @@ static NSString *const topicId = @"topic";
     NSMutableDictionary *parame = [NSMutableDictionary dictionary];
     parame[@"a"] = @"list";
     parame[@"c"] = @"data";
-    parame[@"type"] = @"1";
+    parame[@"type"] = @(self.type);
     parame[@"maxtime"] = self.maxTime;
     
     [self.manager GET:url parameters:parame progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

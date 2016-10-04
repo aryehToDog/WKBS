@@ -6,8 +6,8 @@
 //  Copyright © 2016年 阿拉斯加的🐶. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WKTopicViewController.h"
 
-@interface WKAllViewController : UITableViewController
+@interface WKAllViewController : WKTopicViewController
 
 @end

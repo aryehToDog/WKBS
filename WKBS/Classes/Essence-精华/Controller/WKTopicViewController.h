@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "WKTopic.h"
 @interface WKTopicViewController : UITableViewController
+
+- (WKTopicType)type;
 
 @end

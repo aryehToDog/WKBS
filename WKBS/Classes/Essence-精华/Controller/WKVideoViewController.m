@@ -20,29 +20,8 @@
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (WKTopicType)type {
     
-    return 50;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *ID = @"cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ -- %zd",[self class],indexPath.row];
-    
-    return cell;
-    
+    return WKTopicTypeVideo;;
 }
 @end

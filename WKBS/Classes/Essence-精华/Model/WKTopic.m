@@ -91,6 +91,8 @@ static NSCalendar *calendar_;
  */
 - (CGFloat)cellHight {
 
+    if (_cellHight) return _cellHight;
+    
     //图片的高度
     _cellHight = 18 + 35 + 15;
     
