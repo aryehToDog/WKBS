@@ -7,11 +7,22 @@
 //
 
 #import "WKTopic.h"
-
+#import <MJExtension.h>
+#import "WKComment.h"
 static NSDateFormatter *fmt_;
 static NSCalendar *calendar_;
 
 @implementation WKTopic
+
+//转换成WKComment模型
++ (NSDictionary *)mj_objectClassInArray {
+    
+    return @{
+             @"top_cmt" : [WKComment class]
+             };
+
+}
+
 
 + (void)initialize {
 

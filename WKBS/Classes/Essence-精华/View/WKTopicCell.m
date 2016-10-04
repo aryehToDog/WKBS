@@ -9,6 +9,8 @@
 #import "WKTopicCell.h"
 #import <UIImageView+WebCache.h>
 #import "WKTopic.h"
+#import "WKUser.h"
+#import "WKComment.h"
 @interface WKTopicCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -19,6 +21,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *caiButton;
 @property (weak, nonatomic) IBOutlet UIButton *repostButton;
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
+/** 评论view */
+@property (weak, nonatomic) IBOutlet UIView *topCmtView;
+/** 最新评论label */
+@property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
 
 
 @end
@@ -59,22 +65,25 @@
     self.createdAtLabel.text = topic.created_at;
     self.text_label.text = topic.text;
     
-//    if (topic.ding > 10000) {
-//    
-//        [self.dingButton setTitle:[NSString stringWithFormat:@"%.1f万",topic.ding / 10000.0] forState:UIControlStateNormal];
-//        
-//    }else if (topic.ding > 0) {
-//         [self.dingButton setTitle:[NSString stringWithFormat:@"%zd",topic.ding] forState:UIControlStateNormal];
-//    
-//    }else {
-//         [self.dingButton setTitle:@"顶" forState:UIControlStateNormal];
-//    
-//    }
-    
     [self setupButton:self.dingButton numble:topic.ding title:@"顶"];
     [self setupButton:self.caiButton numble:topic.ding title:@"踩"];
     [self setupButton:self.repostButton numble:topic.ding title:@"转发"];
     [self setupButton:self.commentButton numble:topic.ding title:@"评论"];
+    
+    //设置热门评论的隐藏与显示
+    WKComment *cmt = [topic.top_cmt lastObject];
+    if (topic.top_cmt.count) {
+    
+        self.topCmtView.hidden = NO;
+        
+        NSString *username = cmt.user.username;
+        NSString *content = cmt.content;
+        
+        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@",username,content];
+    }else {
+        self.topCmtView.hidden = YES;
+    }
+    
     
 }
 

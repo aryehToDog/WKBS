@@ -141,7 +141,7 @@
                             <constraint firstItem="957-WW-MYh" firstAttribute="height" secondItem="Qev-ij-bNM" secondAttribute="height" id="zuP-Eq-Svv"/>
                         </constraints>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqc-kl-Sru">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqc-kl-Sru" userLabel="评论View">
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最热评论:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYy-NN-iga">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -194,6 +194,8 @@
                 <outlet property="profileImageView" destination="68P-NQ-RiX" id="Xa5-qI-jgp"/>
                 <outlet property="repostButton" destination="9JG-Lf-gKr" id="2jx-Br-rR3"/>
                 <outlet property="text_label" destination="8uZ-KU-o6p" id="zKy-OZ-LX0"/>
+                <outlet property="topCmtContentLabel" destination="Alo-dc-aVP" id="s8t-DZ-z6X"/>
+                <outlet property="topCmtView" destination="hqc-kl-Sru" id="LJ9-hc-S9e"/>
             </connections>
             <point key="canvasLocation" x="0.0" y="52.5"/>
         </tableViewCell>

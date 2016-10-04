@@ -26,5 +26,8 @@
 @property (nonatomic, assign) NSInteger repost;
 /** 评论数量 */
 @property (nonatomic, assign) NSInteger comment;
+/** cmt模型 */
+@property (nonatomic, strong) NSArray *top_cmt;
+
 
 @end

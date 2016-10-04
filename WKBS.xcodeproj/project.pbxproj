@@ -39,6 +39,8 @@
 		2584AF501DA1282700FE01F3 /* WKTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2584AF4E1DA1282700FE01F3 /* WKTopicCell.xib */; };
 		258C62FA1DA2246900124659 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 258C62F91DA2246900124659 /* NSDate+Extension.m */; };
 		258C62FD1DA224E200124659 /* NSCalendar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 258C62FC1DA224E200124659 /* NSCalendar+Extension.m */; };
+		258C63001DA24EE100124659 /* WKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 258C62FF1DA24EE100124659 /* WKUser.m */; };
+		258C63031DA24FA300124659 /* WKComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 258C63021DA24FA300124659 /* WKComment.m */; };
 		259034461D9FD13D00F9B7DE /* NSString+WKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 259034451D9FD13D00F9B7DE /* NSString+WKExtension.m */; };
 		259034491D9FD2C900F9B7DE /* WKClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 259034481D9FD2C900F9B7DE /* WKClearCacheCell.m */; };
 		2595CA611D9CB8F6007B84CB /* WKLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2595CA601D9CB8F6007B84CB /* WKLoginRegisterTextField.m */; };
@@ -136,6 +138,10 @@
 		258C62F91DA2246900124659 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		258C62FB1DA224E200124659 /* NSCalendar+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Extension.h"; sourceTree = "<group>"; };
 		258C62FC1DA224E200124659 /* NSCalendar+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Extension.m"; sourceTree = "<group>"; };
+		258C62FE1DA24EE100124659 /* WKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKUser.h; sourceTree = "<group>"; };
+		258C62FF1DA24EE100124659 /* WKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKUser.m; sourceTree = "<group>"; };
+		258C63011DA24FA300124659 /* WKComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKComment.h; sourceTree = "<group>"; };
+		258C63021DA24FA300124659 /* WKComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKComment.m; sourceTree = "<group>"; };
 		259034441D9FD13D00F9B7DE /* NSString+WKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WKExtension.h"; sourceTree = "<group>"; };
 		259034451D9FD13D00F9B7DE /* NSString+WKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WKExtension.m"; sourceTree = "<group>"; };
 		259034471D9FD2C900F9B7DE /* WKClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKClearCacheCell.h; sourceTree = "<group>"; };
@@ -239,6 +245,10 @@
 			children = (
 				2584AF401DA0AA0100FE01F3 /* WKTopic.h */,
 				2584AF411DA0AA0100FE01F3 /* WKTopic.m */,
+				258C62FE1DA24EE100124659 /* WKUser.h */,
+				258C62FF1DA24EE100124659 /* WKUser.m */,
+				258C63011DA24FA300124659 /* WKComment.h */,
+				258C63021DA24FA300124659 /* WKComment.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -725,6 +735,7 @@
 				258C62FD1DA224E200124659 /* NSCalendar+Extension.m in Sources */,
 				25C554A61D9FC5E000E4ECF5 /* WKVoiceViewController.m in Sources */,
 				2584AF4B1DA1267000FE01F3 /* WKHTTPSessionManager.m in Sources */,
+				258C63031DA24FA300124659 /* WKComment.m in Sources */,
 				25036AB61D9E5E8D009F5884 /* WKWebViewController.m in Sources */,
 				25B8AFD31D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m in Sources */,
 				2584AF481DA0B04200FE01F3 /* WKRefreshFooter.m in Sources */,
@@ -751,6 +762,7 @@
 				250D8D4A1D9A18E000C634F8 /* WKTabBar.m in Sources */,
 				25C554A01D9FC5C900E4ECF5 /* WKAllViewController.m in Sources */,
 				2595CA611D9CB8F6007B84CB /* WKLoginRegisterTextField.m in Sources */,
+				258C63001DA24EE100124659 /* WKUser.m in Sources */,
 				25B8AFD71D9BC85E00C5C4F4 /* WKQuickLoginButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
