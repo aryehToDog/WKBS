@@ -38,12 +38,22 @@
 		255388DA1D990AF800000967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255388D91D990AF800000967 /* Assets.xcassets */; };
 		255388E81D990AF800000967 /* WKBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388E71D990AF800000967 /* WKBSTests.m */; };
 		255388F31D990AF900000967 /* WKBSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 255388F21D990AF900000967 /* WKBSUITests.m */; };
+		25763A271DA53B1D002BD72A /* WKSeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25763A251DA53B1D002BD72A /* WKSeeBigViewController.m */; };
+		25763A281DA53B1D002BD72A /* WKSeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25763A261DA53B1D002BD72A /* WKSeeBigViewController.xib */; };
+		25763A2B1DA545FF002BD72A /* WKRecommendTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25763A2A1DA545FF002BD72A /* WKRecommendTagViewController.m */; };
+		25763A2F1DA546A3002BD72A /* WKRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25763A2D1DA546A3002BD72A /* WKRecommendTagCell.m */; };
+		25763A301DA546A3002BD72A /* WKRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25763A2E1DA546A3002BD72A /* WKRecommendTagCell.xib */; };
+		25763A331DA54C39002BD72A /* WKRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 25763A321DA54C39002BD72A /* WKRecommendTag.m */; };
 		2584AF421DA0AA0100FE01F3 /* WKTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584AF411DA0AA0100FE01F3 /* WKTopic.m */; };
 		2584AF451DA0ABBC00FE01F3 /* WKRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584AF441DA0ABBC00FE01F3 /* WKRefreshHeader.m */; };
 		2584AF481DA0B04200FE01F3 /* WKRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584AF471DA0B04200FE01F3 /* WKRefreshFooter.m */; };
 		2584AF4B1DA1267000FE01F3 /* WKHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584AF4A1DA1267000FE01F3 /* WKHTTPSessionManager.m */; };
 		2584AF4F1DA1282700FE01F3 /* WKTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584AF4D1DA1282700FE01F3 /* WKTopicCell.m */; };
 		2584AF501DA1282700FE01F3 /* WKTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2584AF4E1DA1282700FE01F3 /* WKTopicCell.xib */; };
+		258A82361DA568BF001311D2 /* UIImage+WKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 258A82351DA568BF001311D2 /* UIImage+WKExtension.m */; };
+		258A82391DA56917001311D2 /* UIImageView+WKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 258A82381DA56917001311D2 /* UIImageView+WKExtension.m */; };
+		258A82411DA56DB0001311D2 /* WKCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 258A823F1DA56DB0001311D2 /* WKCommentViewController.m */; };
+		258A82421DA56DB0001311D2 /* WKCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258A82401DA56DB0001311D2 /* WKCommentViewController.xib */; };
 		258C62FA1DA2246900124659 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 258C62F91DA2246900124659 /* NSDate+Extension.m */; };
 		258C62FD1DA224E200124659 /* NSCalendar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 258C62FC1DA224E200124659 /* NSCalendar+Extension.m */; };
 		258C63001DA24EE100124659 /* WKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 258C62FF1DA24EE100124659 /* WKUser.m */; };
@@ -141,6 +151,16 @@
 		255388EE1D990AF900000967 /* WKBSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKBSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		255388F21D990AF900000967 /* WKBSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBSUITests.m; sourceTree = "<group>"; };
 		255388F41D990AF900000967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25763A241DA53B1D002BD72A /* WKSeeBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSeeBigViewController.h; sourceTree = "<group>"; };
+		25763A251DA53B1D002BD72A /* WKSeeBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSeeBigViewController.m; sourceTree = "<group>"; };
+		25763A261DA53B1D002BD72A /* WKSeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKSeeBigViewController.xib; sourceTree = "<group>"; };
+		25763A291DA545FF002BD72A /* WKRecommendTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKRecommendTagViewController.h; sourceTree = "<group>"; };
+		25763A2A1DA545FF002BD72A /* WKRecommendTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKRecommendTagViewController.m; sourceTree = "<group>"; };
+		25763A2C1DA546A3002BD72A /* WKRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKRecommendTagCell.h; sourceTree = "<group>"; };
+		25763A2D1DA546A3002BD72A /* WKRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKRecommendTagCell.m; sourceTree = "<group>"; };
+		25763A2E1DA546A3002BD72A /* WKRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKRecommendTagCell.xib; sourceTree = "<group>"; };
+		25763A311DA54C39002BD72A /* WKRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKRecommendTag.h; sourceTree = "<group>"; };
+		25763A321DA54C39002BD72A /* WKRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKRecommendTag.m; sourceTree = "<group>"; };
 		2584AF401DA0AA0100FE01F3 /* WKTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTopic.h; sourceTree = "<group>"; };
 		2584AF411DA0AA0100FE01F3 /* WKTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTopic.m; sourceTree = "<group>"; };
 		2584AF431DA0ABBC00FE01F3 /* WKRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKRefreshHeader.h; sourceTree = "<group>"; };
@@ -152,6 +172,13 @@
 		2584AF4C1DA1282700FE01F3 /* WKTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTopicCell.h; sourceTree = "<group>"; };
 		2584AF4D1DA1282700FE01F3 /* WKTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTopicCell.m; sourceTree = "<group>"; };
 		2584AF4E1DA1282700FE01F3 /* WKTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKTopicCell.xib; sourceTree = "<group>"; };
+		258A82341DA568BF001311D2 /* UIImage+WKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WKExtension.h"; sourceTree = "<group>"; };
+		258A82351DA568BF001311D2 /* UIImage+WKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WKExtension.m"; sourceTree = "<group>"; };
+		258A82371DA56917001311D2 /* UIImageView+WKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WKExtension.h"; sourceTree = "<group>"; };
+		258A82381DA56917001311D2 /* UIImageView+WKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WKExtension.m"; sourceTree = "<group>"; };
+		258A823E1DA56DB0001311D2 /* WKCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKCommentViewController.h; sourceTree = "<group>"; };
+		258A823F1DA56DB0001311D2 /* WKCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKCommentViewController.m; sourceTree = "<group>"; };
+		258A82401DA56DB0001311D2 /* WKCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKCommentViewController.xib; sourceTree = "<group>"; };
 		258C62F81DA2246900124659 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		258C62F91DA2246900124659 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		258C62FB1DA224E200124659 /* NSCalendar+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Extension.h"; sourceTree = "<group>"; };
@@ -220,6 +247,7 @@
 		250D8D1E1D9A14B800C634F8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				258A823A1DA56D90001311D2 /* Comment-评论 */,
 				250D8D1F1D9A14B800C634F8 /* Essence-精华 */,
 				250D8D2B1D9A14B800C634F8 /* New-新帖 */,
 				250D8D231D9A14B800C634F8 /* Follow-关注 */,
@@ -256,6 +284,11 @@
 				25C554AB1D9FC5FA00E4ECF5 /* WKWordViewController.m */,
 				250AF16D1DA3D39400B8F558 /* WKTopicViewController.h */,
 				250AF16E1DA3D39400B8F558 /* WKTopicViewController.m */,
+				25763A241DA53B1D002BD72A /* WKSeeBigViewController.h */,
+				25763A251DA53B1D002BD72A /* WKSeeBigViewController.m */,
+				25763A261DA53B1D002BD72A /* WKSeeBigViewController.xib */,
+				25763A291DA545FF002BD72A /* WKRecommendTagViewController.h */,
+				25763A2A1DA545FF002BD72A /* WKRecommendTagViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,6 +302,8 @@
 				258C62FF1DA24EE100124659 /* WKUser.m */,
 				258C63011DA24FA300124659 /* WKComment.h */,
 				258C63021DA24FA300124659 /* WKComment.m */,
+				25763A311DA54C39002BD72A /* WKRecommendTag.h */,
+				25763A321DA54C39002BD72A /* WKRecommendTag.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -290,6 +325,9 @@
 				250AF1681DA3CC4C00B8F558 /* WKTopicVoiceView.h */,
 				250AF1691DA3CC4C00B8F558 /* WKTopicVoiceView.m */,
 				250AF16B1DA3CC5700B8F558 /* WKTopicVoiceView.xib */,
+				25763A2C1DA546A3002BD72A /* WKRecommendTagCell.h */,
+				25763A2D1DA546A3002BD72A /* WKRecommendTagCell.m */,
+				25763A2E1DA546A3002BD72A /* WKRecommendTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -444,6 +482,10 @@
 				258C62F91DA2246900124659 /* NSDate+Extension.m */,
 				258C62FB1DA224E200124659 /* NSCalendar+Extension.h */,
 				258C62FC1DA224E200124659 /* NSCalendar+Extension.m */,
+				258A82341DA568BF001311D2 /* UIImage+WKExtension.h */,
+				258A82351DA568BF001311D2 /* UIImage+WKExtension.m */,
+				258A82371DA56917001311D2 /* UIImageView+WKExtension.h */,
+				258A82381DA56917001311D2 /* UIImageView+WKExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -543,6 +585,40 @@
 				255388F41D990AF900000967 /* Info.plist */,
 			);
 			path = WKBSUITests;
+			sourceTree = "<group>";
+		};
+		258A823A1DA56D90001311D2 /* Comment-评论 */ = {
+			isa = PBXGroup;
+			children = (
+				258A823B1DA56D90001311D2 /* Controller */,
+				258A823C1DA56D90001311D2 /* Model */,
+				258A823D1DA56D90001311D2 /* View */,
+			);
+			path = "Comment-评论";
+			sourceTree = "<group>";
+		};
+		258A823B1DA56D90001311D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				258A823E1DA56DB0001311D2 /* WKCommentViewController.h */,
+				258A823F1DA56DB0001311D2 /* WKCommentViewController.m */,
+				258A82401DA56DB0001311D2 /* WKCommentViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		258A823C1DA56D90001311D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		258A823D1DA56D90001311D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		65E56830348D33AE34D0FDC3 /* Pods */ = {
@@ -675,15 +751,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258A82421DA56DB0001311D2 /* WKCommentViewController.xib in Resources */,
 				250AF1671DA3C8B900B8F558 /* WKTopicVideoView.xib in Resources */,
 				25036AB71D9E5E8D009F5884 /* WKWebViewController.xib in Resources */,
 				250AF16C1DA3CC5700B8F558 /* WKTopicVoiceView.xib in Resources */,
 				250AF1621DA3C09F00B8F558 /* WKTopicPictureView.xib in Resources */,
 				2584AF501DA1282700FE01F3 /* WKTopicCell.xib in Resources */,
 				250D8D471D9A176200C634F8 /* Info.plist in Resources */,
+				25763A301DA546A3002BD72A /* WKRecommendTagCell.xib in Resources */,
 				25B8AFCF1D9BBFA100C5C4F4 /* WKFollowViewController.xib in Resources */,
 				255388DA1D990AF800000967 /* Assets.xcassets in Resources */,
 				25B8AFD41D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib in Resources */,
+				25763A281DA53B1D002BD72A /* WKSeeBigViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,8 +839,11 @@
 				250D8D591D9A644400C634F8 /* WKNavigationController.m in Sources */,
 				250D8D531D9A21E300C634F8 /* WKFollowViewController.m in Sources */,
 				250AF16A1DA3CC4C00B8F558 /* WKTopicVoiceView.m in Sources */,
+				25763A2B1DA545FF002BD72A /* WKRecommendTagViewController.m in Sources */,
+				258A82361DA568BF001311D2 /* UIImage+WKExtension.m in Sources */,
 				250D8D3B1D9A14B800C634F8 /* AppDelegate.m in Sources */,
 				2584AF451DA0ABBC00FE01F3 /* WKRefreshHeader.m in Sources */,
+				25763A2F1DA546A3002BD72A /* WKRecommendTagCell.m in Sources */,
 				2595CA641D9D03C5007B84CB /* UITextField+WKExtension.m in Sources */,
 				2584AF4F1DA1282700FE01F3 /* WKTopicCell.m in Sources */,
 				259034491D9FD2C900F9B7DE /* WKClearCacheCell.m in Sources */,
@@ -773,12 +855,14 @@
 				25036AB61D9E5E8D009F5884 /* WKWebViewController.m in Sources */,
 				25B8AFD31D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m in Sources */,
 				2584AF481DA0B04200FE01F3 /* WKRefreshFooter.m in Sources */,
+				25763A331DA54C39002BD72A /* WKRecommendTag.m in Sources */,
 				25036AAF1D9E1B32009F5884 /* WKSquare.m in Sources */,
 				25036AA91D9E13A1009F5884 /* WKMeCell.m in Sources */,
 				250D8D4D1D9A21B500C634F8 /* WKEssenceViewController.m in Sources */,
 				250D8D5F1D9A77B500C634F8 /* WKSettingViewController.m in Sources */,
 				25C5549D1D9FC20A00E4ECF5 /* WKTitleButton.m in Sources */,
 				250AF16F1DA3D39400B8F558 /* WKTopicViewController.m in Sources */,
+				258A82411DA56DB0001311D2 /* WKCommentViewController.m in Sources */,
 				25036AA61D9E126E009F5884 /* WKConst.m in Sources */,
 				25C554AC1D9FC5FA00E4ECF5 /* WKWordViewController.m in Sources */,
 				250D8D3E1D9A14B800C634F8 /* main.m in Sources */,
@@ -786,10 +870,12 @@
 				250AF1601DA3C09300B8F558 /* WKTopicPictureView.m in Sources */,
 				250D8D501D9A21CE00C634F8 /* WKNewViewController.m in Sources */,
 				25036AB21D9E59BB009F5884 /* WKMeSquareButton.m in Sources */,
+				258A82391DA56917001311D2 /* UIImageView+WKExtension.m in Sources */,
 				250D8D3C1D9A14B800C634F8 /* WKTabBarController.m in Sources */,
 				25036AAC1D9E188C009F5884 /* WKMefootView.m in Sources */,
 				250D8D561D9A21FA00C634F8 /* WKMeViewController.m in Sources */,
 				250D8D5C1D9A66F000C634F8 /* UIBarButtonItem+WKExtension.m in Sources */,
+				25763A271DA53B1D002BD72A /* WKSeeBigViewController.m in Sources */,
 				250D8D451D9A170300C634F8 /* UIView+Frame.m in Sources */,
 				25C554A91D9FC5EB00E4ECF5 /* WKPictureViewController.m in Sources */,
 				259034461D9FD13D00F9B7DE /* NSString+WKExtension.m in Sources */,
@@ -932,7 +1018,7 @@
 				DEVELOPMENT_TEAM = 8Y2G5F25VK;
 				GCC_PREFIX_HEADER = "WKBS/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = WKBS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alasijiadegou.WKBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -948,7 +1034,7 @@
 				DEVELOPMENT_TEAM = 8Y2G5F25VK;
 				GCC_PREFIX_HEADER = "WKBS/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = WKBS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alasijiadegou.WKBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";

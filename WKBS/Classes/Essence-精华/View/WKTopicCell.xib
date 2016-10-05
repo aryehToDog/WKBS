@@ -13,7 +13,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="339"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="338.5"/>
+                <frame key="frameInset" width="320" height="338"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="68P-NQ-RiX" userLabel="图像">
@@ -148,7 +148,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论最新评论" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alo-dc-aVP" userLabel="最新评论">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alo-dc-aVP" userLabel="最新评论">
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -156,7 +156,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Alo-dc-aVP" secondAttribute="bottom" constant="24" id="9Gs-Ez-Kle"/>
+                            <constraint firstAttribute="bottom" secondItem="Alo-dc-aVP" secondAttribute="bottom" id="9Gs-Ez-Kle"/>
                             <constraint firstItem="LYy-NN-iga" firstAttribute="top" secondItem="hqc-kl-Sru" secondAttribute="top" id="Iyx-ab-eAG"/>
                             <constraint firstItem="Alo-dc-aVP" firstAttribute="leading" secondItem="hqc-kl-Sru" secondAttribute="leading" id="Kff-cm-Xq7"/>
                             <constraint firstItem="Alo-dc-aVP" firstAttribute="top" secondItem="LYy-NN-iga" secondAttribute="bottom" id="UaC-xW-FLV"/>

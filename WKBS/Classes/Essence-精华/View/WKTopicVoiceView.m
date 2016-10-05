@@ -9,6 +9,7 @@
 #import "WKTopicVoiceView.h"
 #import "WKTopic.h"
 #import <UIImageView+WebCache.h>
+#import "WKSeeBigViewController.h"
 @interface WKTopicVoiceView ()
 
 @property (weak, nonatomic) IBOutlet UILabel *playCountLabel;
@@ -30,6 +31,20 @@
     
     [super awakeFromNib];
     self.autoresizingMask = UIViewAutoresizingNone;
+    
+    //点击图片查看大图
+    self.imageView.userInteractionEnabled = YES;
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(seeBig)];
+//    [self.imageView addGestureRecognizer:tap];
+}
+
+
+- (void)seeBig {
+    
+    WKSeeBigViewController *seeBig = [[WKSeeBigViewController alloc]init];
+    seeBig.topic = self.topic;
+    [self.window.rootViewController presentViewController:seeBig animated:YES completion:nil];
+    
 }
 
 - (void)setTopic:(WKTopic *)topic {

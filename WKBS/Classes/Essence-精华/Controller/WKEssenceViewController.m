@@ -13,6 +13,7 @@
 #import "WKVoiceViewController.h"
 #import "WKWordViewController.h"
 #import "WKPictureViewController.h"
+#import "WKRecommendTagViewController.h"
 
 @interface WKEssenceViewController () <UIScrollViewDelegate>
 
@@ -170,9 +171,8 @@
 }
 
 - (void)tagClick {
-
-    WKFunc;
-
+    WKRecommendTagViewController *recommVc = [[WKRecommendTagViewController alloc]init];
+    [self.navigationController pushViewController:recommVc animated:YES];
 }
 
 

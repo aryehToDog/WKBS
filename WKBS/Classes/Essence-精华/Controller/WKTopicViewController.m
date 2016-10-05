@@ -15,6 +15,7 @@
 #import <UIImageView+WebCache.h>
 #import "WKRefreshFooter.h"
 #import "WKTopicCell.h"
+#import "WKCommentViewController.h"
 
 @interface WKTopicViewController ()
 @property (nonatomic,strong)NSMutableArray *topics;
@@ -182,6 +183,13 @@ static NSString *const topicId = @"topic";
     
     return topic.cellHight;
     
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    //点击到评论控制器
+    WKCommentViewController *commVc = [[WKCommentViewController alloc]init];
+    [self.navigationController pushViewController:commVc animated:YES];
 }
 
 @end

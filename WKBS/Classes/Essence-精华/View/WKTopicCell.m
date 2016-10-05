@@ -96,7 +96,9 @@
 
     _topic = topic;
     
-    [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+     [self.profileImageView setHeader:topic.profile_image];
+    
+//    [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     
     self.nameLabel.text = topic.name;
     self.createdAtLabel.text = topic.created_at;

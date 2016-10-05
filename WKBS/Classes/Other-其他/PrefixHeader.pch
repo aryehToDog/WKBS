@@ -18,6 +18,8 @@
 #import "WKConst.h"
 #import "NSDate+Extension.h"
 #import "NSCalendar+Extension.h"
+#import "UIImage+WKExtension.h"
+#import "UIImageView+WKExtension.h"
 #define WKFunc WKLog(@"%s",__func__);
 
 /*** 日志 ***/
