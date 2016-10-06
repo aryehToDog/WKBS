@@ -110,13 +110,13 @@
     [self setupButton:self.commentButton numble:topic.ding title:@"评论"];
     
     //设置热门评论的隐藏与显示
-    WKComment *cmt = [topic.top_cmt lastObject];
-    if (topic.top_cmt.count) {
+//    WKComment *cmt = [topic.top_cmt lastObject];
+    if (topic.top_cmt) {
     
         self.topCmtView.hidden = NO;
         
-        NSString *username = cmt.user.username;
-        NSString *content = cmt.content;
+        NSString *username = topic.top_cmt.user.username; // 用户名
+        NSString *content = topic.top_cmt.content; // 评论内容
         
         self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@",username,content];
     }else {

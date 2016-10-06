@@ -62,6 +62,7 @@
 		259034491D9FD2C900F9B7DE /* WKClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 259034481D9FD2C900F9B7DE /* WKClearCacheCell.m */; };
 		2595CA611D9CB8F6007B84CB /* WKLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2595CA601D9CB8F6007B84CB /* WKLoginRegisterTextField.m */; };
 		2595CA641D9D03C5007B84CB /* UITextField+WKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2595CA631D9D03C5007B84CB /* UITextField+WKExtension.m */; };
+		25A6DD251DA66A690038ADBE /* WKExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6DD241DA66A690038ADBE /* WKExtensionConfig.m */; };
 		25B8AFCF1D9BBFA100C5C4F4 /* WKFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B8AFCE1D9BBFA100C5C4F4 /* WKFollowViewController.xib */; };
 		25B8AFD31D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B8AFD11D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m */; };
 		25B8AFD41D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B8AFD21D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib */; };
@@ -195,6 +196,8 @@
 		2595CA601D9CB8F6007B84CB /* WKLoginRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLoginRegisterTextField.m; sourceTree = "<group>"; };
 		2595CA621D9D03C5007B84CB /* UITextField+WKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+WKExtension.h"; sourceTree = "<group>"; };
 		2595CA631D9D03C5007B84CB /* UITextField+WKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WKExtension.m"; sourceTree = "<group>"; };
+		25A6DD231DA66A690038ADBE /* WKExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKExtensionConfig.h; sourceTree = "<group>"; };
+		25A6DD241DA66A690038ADBE /* WKExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKExtensionConfig.m; sourceTree = "<group>"; };
 		25B8AFCE1D9BBFA100C5C4F4 /* WKFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKFollowViewController.xib; sourceTree = "<group>"; };
 		25B8AFD01D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLoginRegisterViewController.h; sourceTree = "<group>"; };
 		25B8AFD11D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLoginRegisterViewController.m; sourceTree = "<group>"; };
@@ -458,6 +461,8 @@
 				250D8D311D9A14B800C634F8 /* AppDelegate.m */,
 				2584AF491DA1267000FE01F3 /* WKHTTPSessionManager.h */,
 				2584AF4A1DA1267000FE01F3 /* WKHTTPSessionManager.m */,
+				25A6DD231DA66A690038ADBE /* WKExtensionConfig.h */,
+				25A6DD241DA66A690038ADBE /* WKExtensionConfig.m */,
 				250D8D321D9A14B800C634F8 /* Category */,
 				250D8D331D9A14B800C634F8 /* Controller */,
 				250D8D381D9A14B800C634F8 /* Model */,
@@ -878,6 +883,7 @@
 				25763A271DA53B1D002BD72A /* WKSeeBigViewController.m in Sources */,
 				250D8D451D9A170300C634F8 /* UIView+Frame.m in Sources */,
 				25C554A91D9FC5EB00E4ECF5 /* WKPictureViewController.m in Sources */,
+				25A6DD251DA66A690038ADBE /* WKExtensionConfig.m in Sources */,
 				259034461D9FD13D00F9B7DE /* NSString+WKExtension.m in Sources */,
 				25C554A31D9FC5D500E4ECF5 /* WKVideoViewController.m in Sources */,
 				250D8D441D9A170300C634F8 /* Foundation+Log.m in Sources */,

@@ -16,24 +16,24 @@ static NSCalendar *calendar_;
 @implementation WKTopic
 
 //转换成WKComment模型
-+ (NSDictionary *)mj_objectClassInArray {
-    
-    return @{
-             @"top_cmt" : [WKComment class]
-             };
-
-}
-
-+ (NSDictionary *)mj_replacedKeyFromPropertyName {
-
-    return @{
-             @"small_image" : @"image0",
-             @"middle_image" : @"image1",
-             @"large_image" : @"image2",
-             @"ID" : @"id"
-             };
-
-}
+//+ (NSDictionary *)mj_objectClassInArray {
+//    
+//    return @{
+//             @"top_cmt" : [WKComment class]
+//             };
+//
+//}
+//
+//+ (NSDictionary *)mj_replacedKeyFromPropertyName {
+//
+//    return @{
+//             @"small_image" : @"image0",
+//             @"middle_image" : @"image1",
+//             @"large_image" : @"image2",
+//             @"ID" : @"id"
+//             };
+//
+//}
 
 + (void)initialize {
 
@@ -125,12 +125,12 @@ static NSCalendar *calendar_;
     }
     
     //计算最热评论的高度
-    if (self.top_cmt.lastObject) {
+    if (self.top_cmt) {
         
         _cellHight += 19.5;
-        WKComment *cmt = [self.top_cmt lastObject];
-        NSString *username = cmt.user.username;
-        NSString *content = cmt.content;
+//        WKComment *cmt = [self.top_cmt lastObject];
+        NSString *username = self.top_cmt.user.username;
+        NSString *content = self.top_cmt.content;
         
         NSString *topCmtContent = [NSString stringWithFormat:@"%@ : %@",username,content];
         CGSize topCmtContentSize = [topCmtContent boundingRectWithSize:textMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13] } context:nil].size;

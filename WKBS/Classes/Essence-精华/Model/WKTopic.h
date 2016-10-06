@@ -23,7 +23,7 @@ typedef enum {
     
 }WKTopicType;
 
-
+@class WKComment;
 @interface WKTopic : NSObject
 
 /** id */
@@ -45,7 +45,7 @@ typedef enum {
 /** 评论数量 */
 @property (nonatomic, assign) NSInteger comment;
 /** cmt模型 */
-@property (nonatomic, strong) NSArray *top_cmt;
+@property (nonatomic, strong) WKComment *top_cmt;
 /** 图片的真实宽度 */
 @property (nonatomic, assign) CGFloat width;
 /** 图片的真实高度 */

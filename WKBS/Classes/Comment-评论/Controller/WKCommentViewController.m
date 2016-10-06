@@ -20,9 +20,9 @@
 @property (nonatomic,strong)WKHTTPSessionManager *manager;
 
 /** 最热评论数组 */
-@property (nonatomic,strong)NSArray *hotestComments;
+@property (nonatomic,strong)NSArray<WKComment *> *hotestComments;
 /** 最新评论数组 */
-@property (nonatomic,strong)NSMutableArray *latestComments;
+@property (nonatomic,strong)NSMutableArray<WKComment *> *latestComments;
 
 @end
 
@@ -123,7 +123,7 @@
     parame[@"c"] = @"comment";
     parame[@"data_id"] = self.topic.ID;
     //获取最后一个帖子的id
-//    parame[@"lastcid"] = self.latestComments.lastObject.ID;
+    parame[@"lastcid"] = self.latestComments.lastObject.ID;
     
     [self.manager GET:url parameters:parame progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
