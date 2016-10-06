@@ -26,6 +26,8 @@ typedef enum {
 
 @interface WKTopic : NSObject
 
+/** id */
+@property (nonatomic, copy) NSString *ID;
 /** 用户的名字 */
 @property (nonatomic, copy) NSString *name;
 /** 用户的头像 */

@@ -9,6 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WKCommentViewController">
             <connections>
                 <outlet property="bottomMargin" destination="GMa-LI-aua" id="ceL-Hw-hvP"/>
+                <outlet property="tableView" destination="ugE-Eo-3cc" id="UwL-cK-3Vb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -60,6 +61,7 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ugE-Eo-3cc">
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
+                        <outlet property="dataSource" destination="-1" id="wA0-i7-jdX"/>
                         <outlet property="delegate" destination="-1" id="1aP-85-7DU"/>
                     </connections>
                 </tableView>

@@ -7,7 +7,15 @@
 //
 
 #import "WKComment.h"
-
+#import <MJExtension.h>
 @implementation WKComment
+
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+    
+    return @{
+             @"ID" : @"id"
+             };
+    
+}
 
 @end

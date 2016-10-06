@@ -16,7 +16,7 @@
 #import "WKRefreshFooter.h"
 #import "WKTopicCell.h"
 #import "WKCommentViewController.h"
-
+#import "WKNewViewController.h"
 @interface WKTopicViewController ()
 @property (nonatomic,strong)NSMutableArray *topics;
 @property (nonatomic,copy)NSString *maxTime;
@@ -78,6 +78,15 @@ static NSString *const topicId = @"topic";
 }
 
 
+/** 
+ *    新帖及精华帖
+ */
+- (NSString *)a {
+
+    return [self.parentViewController isKindOfClass:[WKNewViewController class]] ? @"NewList" : @"list";
+
+}
+
 /**
  *   下拉刷新更多数据
  */
@@ -89,7 +98,7 @@ static NSString *const topicId = @"topic";
     
     NSString *url = @"http://api.budejie.com/api/api_open.php";
     NSMutableDictionary *parame = [NSMutableDictionary dictionary];
-    parame[@"a"] = @"list";
+    parame[@"a"] = self.a;
     parame[@"c"] = @"data";
     parame[@"type"] = @(self.type);
     
@@ -127,7 +136,7 @@ static NSString *const topicId = @"topic";
     
     NSString *url = @"http://api.budejie.com/api/api_open.php";
     NSMutableDictionary *parame = [NSMutableDictionary dictionary];
-    parame[@"a"] = @"list";
+    parame[@"a"] = self.a;
     parame[@"c"] = @"data";
     parame[@"type"] = @(self.type);
     parame[@"maxtime"] = self.maxTime;

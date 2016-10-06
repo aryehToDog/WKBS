@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class WKTopic;
 @interface WKCommentViewController : UIViewController
+
+@property (nonatomic,strong)WKTopic *topic;
 
 @end
