@@ -14,10 +14,15 @@
 #import "WKHTTPSessionManager.h"
 #import "WKTopic.h"
 #import "WKComment.h"
-@interface WKCommentViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "WKCommentCell.h"
+#import "WKTopicCell.h"
+@interface WKCommentViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomMargin;
 @property (nonatomic,strong)WKHTTPSessionManager *manager;
+
+//保存模型的属性
+@property (nonatomic,strong)WKComment *savedTopCmt;
 
 /** 最热评论数组 */
 @property (nonatomic,strong)NSArray<WKComment *> *hotestComments;
@@ -39,20 +44,56 @@
     return _manager;
 }
 
+
+static NSString * const WKCommentID = @"comment";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setNav];
     
+    [self setupTableView];
+    
     [self setupRefresh];
     
+    [self setupHeader];
+    
+}
+
+- (void)setupHeader {
+
+    self.savedTopCmt = self.topic.top_cmt;
+    self.topic.top_cmt = nil;
+    self.topic.cellHight = 0;
+    UIView *header = [[UIView alloc]init];
+    WKTopicCell *cell = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([WKTopicCell class]) owner:nil options:nil].lastObject;
+    cell.topic = self.topic;
+    [header addSubview:cell];
+    
+    cell.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, self.topic.cellHight);
+    
+    //设置header的frame
+    header.wk_height = cell.wk_height + WKMargin * 2;
+
+    self.tableView.tableHeaderView = header;
 }
 
 - (void)setNav {
     self.navigationItem.title = @"评论";
-    self.tableView.backgroundColor = WKCommonBgColor;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
 
+}
+
+
+- (void)setupTableView {
+    
+    self.tableView.backgroundColor = WKCommonBgColor;
+    
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WKCommentCell class]) bundle:nil] forCellReuseIdentifier:WKCommentID];
+
+    //自动计算cell的行高
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 44;
+    
 }
 
 - (void)setupRefresh {
@@ -181,6 +222,9 @@
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    self.topic.top_cmt = self.savedTopCmt;
+    self.topic.cellHight = 0;
 }
 /** 
  *    tableView 即将开始进行拖拽的时候
@@ -192,5 +236,65 @@
 
 }
 
+
+#pragma mark - <UITableViewDataSource>
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
+    if (self.hotestComments.count) return 2;
+    if (self.latestComments.count) return 1;
+    return 0;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+    if (section == 0 && self.hotestComments.count) {
+        return self.hotestComments.count;
+    }else {
+        return self.latestComments.count;
+    }
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    WKCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:WKCommentID];
+    
+    if (indexPath.section == 0 && self.hotestComments.count) {
+        cell.comment = self.hotestComments[indexPath.row];
+    }else {
+        cell.comment = self.latestComments[indexPath.row];
+    }
+    return cell;
+}
+
+/** 
+ *   组头的标题
+ */
+
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//
+//    UILabel *lable = [[UILabel alloc]init];
+//    
+//    if (section == 0 && self.hotestComments.count) {
+//        
+//        lable.text = @"最热评论";
+//        
+//    }else {
+//        lable.text = @"最新评论";
+//    }
+//    return lable;
+//}
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+
+        if (section == 0 && self.hotestComments.count) {
+    
+            return @"最热评论";
+    
+        }else {
+            return @"最新评论";
+        }
+
+}
 
 @end

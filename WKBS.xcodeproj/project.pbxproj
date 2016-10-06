@@ -63,6 +63,8 @@
 		2595CA611D9CB8F6007B84CB /* WKLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2595CA601D9CB8F6007B84CB /* WKLoginRegisterTextField.m */; };
 		2595CA641D9D03C5007B84CB /* UITextField+WKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2595CA631D9D03C5007B84CB /* UITextField+WKExtension.m */; };
 		25A6DD251DA66A690038ADBE /* WKExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6DD241DA66A690038ADBE /* WKExtensionConfig.m */; };
+		25A6DD291DA66F9F0038ADBE /* WKCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6DD271DA66F9F0038ADBE /* WKCommentCell.m */; };
+		25A6DD2A1DA66F9F0038ADBE /* WKCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A6DD281DA66F9F0038ADBE /* WKCommentCell.xib */; };
 		25B8AFCF1D9BBFA100C5C4F4 /* WKFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B8AFCE1D9BBFA100C5C4F4 /* WKFollowViewController.xib */; };
 		25B8AFD31D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B8AFD11D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m */; };
 		25B8AFD41D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B8AFD21D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib */; };
@@ -198,6 +200,9 @@
 		2595CA631D9D03C5007B84CB /* UITextField+WKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WKExtension.m"; sourceTree = "<group>"; };
 		25A6DD231DA66A690038ADBE /* WKExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKExtensionConfig.h; sourceTree = "<group>"; };
 		25A6DD241DA66A690038ADBE /* WKExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKExtensionConfig.m; sourceTree = "<group>"; };
+		25A6DD261DA66F9F0038ADBE /* WKCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKCommentCell.h; sourceTree = "<group>"; };
+		25A6DD271DA66F9F0038ADBE /* WKCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKCommentCell.m; sourceTree = "<group>"; };
+		25A6DD281DA66F9F0038ADBE /* WKCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKCommentCell.xib; sourceTree = "<group>"; };
 		25B8AFCE1D9BBFA100C5C4F4 /* WKFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKFollowViewController.xib; sourceTree = "<group>"; };
 		25B8AFD01D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLoginRegisterViewController.h; sourceTree = "<group>"; };
 		25B8AFD11D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLoginRegisterViewController.m; sourceTree = "<group>"; };
@@ -622,6 +627,9 @@
 		258A823D1DA56D90001311D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				25A6DD261DA66F9F0038ADBE /* WKCommentCell.h */,
+				25A6DD271DA66F9F0038ADBE /* WKCommentCell.m */,
+				25A6DD281DA66F9F0038ADBE /* WKCommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -766,6 +774,7 @@
 				25763A301DA546A3002BD72A /* WKRecommendTagCell.xib in Resources */,
 				25B8AFCF1D9BBFA100C5C4F4 /* WKFollowViewController.xib in Resources */,
 				255388DA1D990AF800000967 /* Assets.xcassets in Resources */,
+				25A6DD2A1DA66F9F0038ADBE /* WKCommentCell.xib in Resources */,
 				25B8AFD41D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib in Resources */,
 				25763A281DA53B1D002BD72A /* WKSeeBigViewController.xib in Resources */,
 			);
@@ -848,6 +857,7 @@
 				258A82361DA568BF001311D2 /* UIImage+WKExtension.m in Sources */,
 				250D8D3B1D9A14B800C634F8 /* AppDelegate.m in Sources */,
 				2584AF451DA0ABBC00FE01F3 /* WKRefreshHeader.m in Sources */,
+				25A6DD291DA66F9F0038ADBE /* WKCommentCell.m in Sources */,
 				25763A2F1DA546A3002BD72A /* WKRecommendTagCell.m in Sources */,
 				2595CA641D9D03C5007B84CB /* UITextField+WKExtension.m in Sources */,
 				2584AF4F1DA1282700FE01F3 /* WKTopicCell.m in Sources */,

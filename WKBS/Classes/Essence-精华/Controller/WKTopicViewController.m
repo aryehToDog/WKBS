@@ -198,6 +198,7 @@ static NSString *const topicId = @"topic";
 
     //点击到评论控制器
     WKCommentViewController *commVc = [[WKCommentViewController alloc]init];
+    commVc.topic = self.topics[indexPath.row];
     [self.navigationController pushViewController:commVc animated:YES];
 }
 
