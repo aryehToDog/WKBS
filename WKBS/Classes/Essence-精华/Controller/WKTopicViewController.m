@@ -50,7 +50,56 @@ static NSString *const topicId = @"topic";
     
     //加载数据
     [self setupRefresh];
+    
+    //接收通知
+    [self setNote];
 }
+
+- (void)setNote {
+
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(tabBarButtonDidRepeatClick) name:WKTabBarButtonDidRepeatClickNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(titleButtonDidRepeatClick) name:WKTitleButtonDidRepeatClickNotification object:nil];
+
+}
+
+- (void)dealloc {
+
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+    
+}
+
+/** 
+ *   重复点击底部tabBar进行刷新
+ */
+
+- (void)tabBarButtonDidRepeatClick {
+
+    //判断当前控制器的view(帖子上的view) 是否在窗口上  如果不在直接返回  不然会调用五次
+    if (self.view.window == nil) return;
+    
+    //判断当前view是否跟控制器进行重叠 如果不是在重叠直接返回
+    if (![self.view intersectWithView:self.view.window]) return;
+    
+    //进行刷新
+    [self.tableView.mj_header beginRefreshing];
+}
+
+
+/** 双击所在标题会进行刷新 */
+- (void)titleButtonDidRepeatClick {
+
+    //判断当前控制器的view(帖子上的view) 是否在窗口上  如果不在直接返回  不然会调用五次
+    if (self.view.window == nil) return;
+    
+    //判断当前view是否跟控制器进行重叠 如果不是在重叠直接返回
+    if (![self.view intersectWithView:self.view.window]) return;
+    
+    //进行刷新
+    [self.tableView.mj_header beginRefreshing];
+
+}
+
 
 - (void)setupTableView {
     

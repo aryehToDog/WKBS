@@ -65,6 +65,7 @@
 		25A6DD251DA66A690038ADBE /* WKExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6DD241DA66A690038ADBE /* WKExtensionConfig.m */; };
 		25A6DD291DA66F9F0038ADBE /* WKCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6DD271DA66F9F0038ADBE /* WKCommentCell.m */; };
 		25A6DD2A1DA66F9F0038ADBE /* WKCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A6DD281DA66F9F0038ADBE /* WKCommentCell.xib */; };
+		25A6DD2D1DA6A0890038ADBE /* WKCommentSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A6DD2C1DA6A0890038ADBE /* WKCommentSectionHeader.m */; };
 		25B8AFCF1D9BBFA100C5C4F4 /* WKFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B8AFCE1D9BBFA100C5C4F4 /* WKFollowViewController.xib */; };
 		25B8AFD31D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B8AFD11D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m */; };
 		25B8AFD41D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B8AFD21D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.xib */; };
@@ -75,6 +76,7 @@
 		25C554A61D9FC5E000E4ECF5 /* WKVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C554A51D9FC5E000E4ECF5 /* WKVoiceViewController.m */; };
 		25C554A91D9FC5EB00E4ECF5 /* WKPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C554A81D9FC5EB00E4ECF5 /* WKPictureViewController.m */; };
 		25C554AC1D9FC5FA00E4ECF5 /* WKWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C554AB1D9FC5FA00E4ECF5 /* WKWordViewController.m */; };
+		25D732B31DA7F511004B37D9 /* WKTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D732B21DA7F511004B37D9 /* WKTopWindow.m */; };
 		F5C38657981942440E7DE349 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D857E9336B67A5FD5763C87 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -203,6 +205,8 @@
 		25A6DD261DA66F9F0038ADBE /* WKCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKCommentCell.h; sourceTree = "<group>"; };
 		25A6DD271DA66F9F0038ADBE /* WKCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKCommentCell.m; sourceTree = "<group>"; };
 		25A6DD281DA66F9F0038ADBE /* WKCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKCommentCell.xib; sourceTree = "<group>"; };
+		25A6DD2B1DA6A0890038ADBE /* WKCommentSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKCommentSectionHeader.h; sourceTree = "<group>"; };
+		25A6DD2C1DA6A0890038ADBE /* WKCommentSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKCommentSectionHeader.m; sourceTree = "<group>"; };
 		25B8AFCE1D9BBFA100C5C4F4 /* WKFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKFollowViewController.xib; sourceTree = "<group>"; };
 		25B8AFD01D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLoginRegisterViewController.h; sourceTree = "<group>"; };
 		25B8AFD11D9BC1AD00C5C4F4 /* WKLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLoginRegisterViewController.m; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 		25C554A81D9FC5EB00E4ECF5 /* WKPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKPictureViewController.m; sourceTree = "<group>"; };
 		25C554AA1D9FC5FA00E4ECF5 /* WKWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWordViewController.h; sourceTree = "<group>"; };
 		25C554AB1D9FC5FA00E4ECF5 /* WKWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWordViewController.m; sourceTree = "<group>"; };
+		25D732B11DA7F511004B37D9 /* WKTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTopWindow.h; sourceTree = "<group>"; };
+		25D732B21DA7F511004B37D9 /* WKTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTopWindow.m; sourceTree = "<group>"; };
 		4D857E9336B67A5FD5763C87 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B295244922BD9E9B869B4A60 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BA6AA61C0FDA4AD1513C88A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -461,9 +467,9 @@
 				250D8D371D9A14B800C634F8 /* main.m */,
 				250D8D391D9A14B800C634F8 /* PrefixHeader.pch */,
 				250D8D301D9A14B800C634F8 /* AppDelegate.h */,
+				250D8D311D9A14B800C634F8 /* AppDelegate.m */,
 				25036AA41D9E126E009F5884 /* WKConst.h */,
 				25036AA51D9E126E009F5884 /* WKConst.m */,
-				250D8D311D9A14B800C634F8 /* AppDelegate.m */,
 				2584AF491DA1267000FE01F3 /* WKHTTPSessionManager.h */,
 				2584AF4A1DA1267000FE01F3 /* WKHTTPSessionManager.m */,
 				25A6DD231DA66A690038ADBE /* WKExtensionConfig.h */,
@@ -534,6 +540,8 @@
 				2584AF441DA0ABBC00FE01F3 /* WKRefreshHeader.m */,
 				2584AF461DA0B04200FE01F3 /* WKRefreshFooter.h */,
 				2584AF471DA0B04200FE01F3 /* WKRefreshFooter.m */,
+				25D732B11DA7F511004B37D9 /* WKTopWindow.h */,
+				25D732B21DA7F511004B37D9 /* WKTopWindow.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -630,6 +638,8 @@
 				25A6DD261DA66F9F0038ADBE /* WKCommentCell.h */,
 				25A6DD271DA66F9F0038ADBE /* WKCommentCell.m */,
 				25A6DD281DA66F9F0038ADBE /* WKCommentCell.xib */,
+				25A6DD2B1DA6A0890038ADBE /* WKCommentSectionHeader.h */,
+				25A6DD2C1DA6A0890038ADBE /* WKCommentSectionHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -859,10 +869,12 @@
 				2584AF451DA0ABBC00FE01F3 /* WKRefreshHeader.m in Sources */,
 				25A6DD291DA66F9F0038ADBE /* WKCommentCell.m in Sources */,
 				25763A2F1DA546A3002BD72A /* WKRecommendTagCell.m in Sources */,
+				25D732B31DA7F511004B37D9 /* WKTopWindow.m in Sources */,
 				2595CA641D9D03C5007B84CB /* UITextField+WKExtension.m in Sources */,
 				2584AF4F1DA1282700FE01F3 /* WKTopicCell.m in Sources */,
 				259034491D9FD2C900F9B7DE /* WKClearCacheCell.m in Sources */,
 				2584AF421DA0AA0100FE01F3 /* WKTopic.m in Sources */,
+				25A6DD2D1DA6A0890038ADBE /* WKCommentSectionHeader.m in Sources */,
 				258C62FD1DA224E200124659 /* NSCalendar+Extension.m in Sources */,
 				25C554A61D9FC5E000E4ECF5 /* WKVoiceViewController.m in Sources */,
 				2584AF4B1DA1267000FE01F3 /* WKHTTPSessionManager.m in Sources */,

@@ -16,6 +16,7 @@
 #import "WKComment.h"
 #import "WKCommentCell.h"
 #import "WKTopicCell.h"
+#import "WKCommentSectionHeader.h"
 @interface WKCommentViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomMargin;
@@ -46,6 +47,7 @@
 
 
 static NSString * const WKCommentID = @"comment";
+static NSString * const WKSectionHeaderlId = @"header";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -90,10 +92,17 @@ static NSString * const WKCommentID = @"comment";
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([WKCommentCell class]) bundle:nil] forCellReuseIdentifier:WKCommentID];
 
+    [self.tableView registerClass:[WKCommentSectionHeader class] forHeaderFooterViewReuseIdentifier:WKSectionHeaderlId];
+    
+    
+    // 每一组头部控件的高度
+//    self.tableView.sectionHeaderHeight = XMGCommentSectionHeaderFont.lineHeight + 2;
+    self.tableView.sectionHeaderHeight = [UIFont systemFontOfSize:14].lineHeight + 2;
+    
     //自动计算cell的行高
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 44;
-    
+    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
 }
 
 - (void)setupRefresh {
@@ -271,30 +280,17 @@ static NSString * const WKCommentID = @"comment";
 /** 
  *   组头的标题
  */
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
 
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-//
-//    UILabel *lable = [[UILabel alloc]init];
-//    
-//    if (section == 0 && self.hotestComments.count) {
-//        
-//        lable.text = @"最热评论";
-//        
-//    }else {
-//        lable.text = @"最新评论";
-//    }
-//    return lable;
-//}
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-
-        if (section == 0 && self.hotestComments.count) {
+    WKCommentSectionHeader *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:WKSectionHeaderlId];
     
-            return @"最热评论";
+    if (section == 0 && self.hotestComments.count) {
+        header.textLabel.text = @"最热评论";
+    }else {
+        header.textLabel.text = @"最新评论";
+    }
     
-        }else {
-            return @"最新评论";
-        }
-
+    return header;
 }
 
 @end

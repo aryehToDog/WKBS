@@ -20,4 +20,6 @@
 @property (nonatomic, assign) CGSize wk_size;
 @property (nonatomic, assign) CGPoint wk_origin;
 
+- (BOOL)intersectWithView:(UIView *)view;
+
 @end

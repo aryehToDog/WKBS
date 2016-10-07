@@ -8,12 +8,27 @@
 
 #import "AppDelegate.h"
 #import "WKTabBarController.h"
-@interface AppDelegate ()
+@interface AppDelegate ()<UITabBarControllerDelegate>
+
+/** 上一次选中的索引 */
+@property (nonatomic,assign)NSInteger lastSelectedIndex;
 
 @end
 
 @implementation AppDelegate
 
+
+#pragma mark - <UITabBarControllerDelegate>
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    if (tabBarController.selectedIndex == self.lastSelectedIndex) {
+        
+        //发出通知
+        [[NSNotificationCenter defaultCenter]postNotificationName:WKTabBarButtonDidRepeatClickNotification object:nil];
+    }
+
+    //记录索引值
+    self.lastSelectedIndex = tabBarController.selectedIndex;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -23,7 +38,10 @@
     self.window.frame = [UIScreen mainScreen].bounds;
     
     //设置根控制器
-    self.window.rootViewController = [[WKTabBarController alloc]init];
+    WKTabBarController *tabVc = [[WKTabBarController alloc]init];
+    tabVc.delegate = self;
+    
+    self.window.rootViewController = tabVc;
     
     //显示主窗口
     [self.window makeKeyAndVisible];

@@ -152,6 +152,14 @@
 #pragma mark - 按钮点击
 - (void)buttonClick:(WKTitleButton *)btn {
 
+    //如果选中按钮跟所在按钮相等 会发送一个通知
+    if (btn == self.selectBtn) {
+        
+        [[NSNotificationCenter defaultCenter]postNotificationName:WKTitleButtonDidRepeatClickNotification object:nil];
+        
+    }
+    
+    
     self.selectBtn.selected = NO;
     btn.selected = YES;
     self.selectBtn = btn;
